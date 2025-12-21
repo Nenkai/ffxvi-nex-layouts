@@ -19,16 +19,9 @@ use_base_row_id|false
 // E8 ? ? ? ? 48 85 C0 74 ? 48 63 48 ? 48 8D 50
 /////////////////////////////////////////////////////////////////
 add_column|DLCFlags|int
-
-// ref: 48 63 48 ? 48 8D 50 ? 48 03 D1 80 3A
-add_column|Message|string|rel
-
-// ref: 83 7E ? ? 75 ? C6 43 ? ? EB ? 83 7E ? ? 75 ? C6 43 ? ? EB
-add_column|UnkType3|int
-
+add_column|Message|string|rel    // ref: 48 63 48 ? 48 8D 50 ? 48 03 D1 80 3A
+add_column|UnkType3|int          // ref: 83 7E ? ? 75 ? C6 43 ? ? EB ? 83 7E ? ? 75 ? C6 43 ? ? EB
 add_column|Comment1|string
 add_column|Comment2|string
-
-// ref: 40 38 78 ? 74 ? 48 8B 0D
-add_column|UnkBool6|byte
+add_column|UnkBool6|byte         // ref: 40 38 78 ? 74 ? 48 8B 0D
 // <implicit 3 bytes padding>

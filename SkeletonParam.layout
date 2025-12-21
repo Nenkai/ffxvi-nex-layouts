@@ -12,18 +12,11 @@ use_base_row_id|false
 
 add_column|DLCFlags|int
 add_column|LodIKBFiles|string[]
-
-// 12 entries max
-add_column|MotionLayerIds1|int[]
-
-// 12 entries max, id 40 is hardcoded to read a file with identifier PADD?
-add_column|MotionLayerIds2|int[]
-
+add_column|MotionLayerIds1|int[]     // 12 entries max
+add_column|MotionLayerIds2|int[]     // 12 entries max, id 40 is hardcoded to read a file with identifier PADD?
 add_column|LegIKFile|string
 add_column|LookAtIKFile|string
-
-// 4 entries max
-add_column|KineDriverFiles|string[]
+add_column|KineDriverFiles|string[]  // 4 entries max
 add_column|RagdollParamId|int
 add_column|LeanIKBFiles|string
 add_column|BonamikSetupFile|string
@@ -31,16 +24,10 @@ add_column|ParkourIKBFile|string
 add_column|HitReactionIKBFile|string
 add_column|EyeBlinkIKBFile|string
 add_column|BodyBendingIKBFile|string
-
-// BonamikSetupFile must be present to load for the next two fields
-// appears unused? Is this also supposed to load a shared params?
-// See: 140087912 (ffxvi.exe 1.0.1 steam)
-add_column|UnkFile15|string
+add_column|UnkFile15|string          // BonamikSetupFile must be present to load for the next two fields - appears unused? Is this also supposed to load a shared params? See: 140087912 (ffxvi.exe 1.0.1 steam)
 add_column|BonamikSharedParamsIKBFile|string
-
 add_column|DialogueLookAtIKBFile|string
 add_column|RiderPostureIKBFile|string
-
 add_column|Comment|string
 add_column|SourceCharaIdFolder|ushort
 add_column|Unk21|byte

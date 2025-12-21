@@ -7,11 +7,11 @@ add_column|DLCFlags|int
 add_column|Comment|string
 
 // union
-// 124 = item
-// 177 = equipitem
+// 124 = Item
+// 177 = EquipItem
 add_column|ItemUnion|union
 
 // union
-// 1144 = dlcentitlement
-// 1174 = patchdlcversion
+// 1144 = DLCEntitlement
+// 1174 = PatchDLCVersion
 add_column|EntitlementUnion|union

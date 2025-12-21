@@ -22,8 +22,7 @@ add_column|Eikon|int
 add_column|LeviathanAmmo|int
 add_column|UnkType5|int
 add_column|UnkType6|int
-// ui/icon
-add_column|IconTexFileId|int
+add_column|IconTexFileId|int                // ui/icon
 add_column|Unk8|int
 add_column|Unk9|int[]
 add_column|Unk10|int
@@ -31,18 +30,11 @@ add_column|Name|string|rel
 add_column|Unk12|int
 add_column|Unk13|int
 add_column|GaugeRedZoneActionId|int
-
-// (TheGodOdin): commandIDkey so if you put a command key in this column you can perform another ability while in air even if you set "CanUseInAir" column to 0 (zero);
-add_column|AirCommandId|int
-
+add_column|AirCommandId|int                 // (TheGodOdin): commandIDkey so if you put a command key in this column you can perform another ability while in air even if you set "CanUseInAir" column to 0 (zero)
 add_column|Unk16|int
 add_column|Unk17|float
-
-// Hardcoded enum id checks
-add_column|SummonModeId|int
-
-// No more than 7 (bitset_out_of_range)
-add_column|UnkBitFlags19|int
+add_column|SummonModeId|int                 // Hardcoded enum id checks
+add_column|UnkBitFlags19|int                // No more than 7 (bitset_out_of_range)
 
 // (TheGodOdin): refers to an action id that can we use to make an action of any abilities perform when 
 // we use any direction + the ability (like mThund3R make it with his mod that can we make another ability with up or down + the commando of abilities)
@@ -50,10 +42,7 @@ add_column|AnyDirectionActionId|int
 
 add_column|GaugeCancelActionId|int
 add_column|Unk22|int
-
-// Delay in seconds until the attack automatically releases, if the attack starts due to this auto-release its always the weakest version, 
-// even it the meter is on the red zone
-add_column|GaugeInterruptDelaySecond|float
+add_column|GaugeInterruptDelaySecond|float  // Delay in seconds until the attack automatically releases, if the attack starts due to this auto-release its always the weakest version, even it the meter is on the red zone
 
 add_column|UnkComboId|int
 add_column|Unk25|int
@@ -103,10 +92,7 @@ add_column|Unk54|float
 add_column|Unk55|Unk55_Struct[]
 add_column|ActionLogId|int
 add_column|Unk57|int
-
-// explicitly checked against hardcoded numbers
-add_column|SkillBgOrIconColor|int
-
+add_column|SkillBgOrIconColor|int   // explicitly checked against hardcoded numbers
 add_column|FirelightItemCapUltimaniac|int
 add_column|Unk60|int
 add_column|Unk61|float
@@ -116,11 +102,7 @@ add_column|Unk63|short
 
 add_column|UnkBool64|byte
 add_column|Unk65|byte
-
-// Confirmed used
-// ffxvi.exe steam 1.0.1 - 0F BF 90 ? ? ? ? 41 B0
-add_column|Unk66|short
-
+add_column|Unk66|short   // Confirmed used - ref: 0F BF 90 ? ? ? ? 41 B0
 add_column|Unk68|byte
 add_column|Unk69|byte
 add_column|Unk70|byte
@@ -141,19 +123,14 @@ add_column|Unk84|byte
 add_column|UnkBool85|byte
 add_column|UnkBool86|byte
 add_column|UnkBool87|byte
-// Seems important
-add_column|UnkBool88|byte
+add_column|UnkBool88|byte  // Seems important
 add_column|UnkBool89|byte
 add_column|Unk90|byte
 add_column|UnkBool91|byte
 add_column|Unk92|byte
 add_column|Unk93|byte
 add_column|Unk94|byte
-
-// Seems to do something random related
-// 80 B8 ? ? ? ? ? 76 ? E8
-add_column|Unk95|byte
-
+add_column|Unk95|byte      // Seems to do something random related - ref: 80 B8 ? ? ? ? ? 76 ? E8
 add_column|Unk96|byte
 add_column|Unk97|byte
 add_column|Unk98|byte

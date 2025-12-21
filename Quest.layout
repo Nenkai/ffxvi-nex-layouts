@@ -22,11 +22,9 @@ add_column|Unk6|string|rel|-12
 // Also controls jingle
 // NOT an union. type is checked as int (whereas union is short).
 add_column|QuestType|int
+
 add_column|Unk8|int
-
-// no more than 9? 14053A276
-add_column|Unk9|int
-
+add_column|Unk9|int                       // no more than 9? 14053A276
 add_column|Unk10|int
 add_column|Unk11|int
 add_column|Unk12|int
@@ -34,20 +32,14 @@ add_column|Unk13|int
 add_column|Unk14|int
 add_column|Unk15|int
 add_column|ReqCompletedQuestIds|int[]
-
-// 0 = none
-add_column|DropTableId|int
+add_column|DropTableId|int               // 0 = none
 add_column|Unk19|int
 add_column|Unk20|int
 add_column|Unk21|int
 add_column|Unk22|string
 add_column|Unk23|int
 add_column|Unk24|int
-
-// count of sorts?
-// ffxvi_demo.exe 1.0.0 check at 14028CF96
-// read when getting closer to npc (30 meters?)
-add_column|Unk25|int
+add_column|Unk25|int                     // count of sorts? read when getting closer to npc (30 meters?) ffxvi_demo.exe 1.0.0 check at 14028CF96
 add_column|Unk26|byte
 add_column|Unk27|byte
 add_column|Unk28|byte

@@ -10,19 +10,19 @@ add_column|Unk2|int
 add_column|BehaviorMoveId|int
 
 // 0 - no args
-// 1-5 - layoutnamedinstance
-// 7 - behaviorwanderingparam? arg 2?
+// 1-5 - LayoutNamedInstance
+// 7 - BehaviorWanderingParam? arg 2?
 // 8-11 - unused
 // 12 - ?
 // 13 - ?
-// 14 - behaviorguidanceparam
+// 14 - BehaviorGuidanceParam
 // 15 - no args?
 // 16 - no args?
 // 17 - no args?
 // 18 - no args?
 // 19 - no args?
 // 20 - no args?
-// 21 - behaviormoverailparam
+// 21 - BehaviorMoveRailParam
 // rest TODO
 
 add_column|BehaviorMoveArgument1Union|union
@@ -47,7 +47,7 @@ add_column|Unk22|byte
 // Reverse engineering notes
 /////////////////////////////////////////////////////////////////
 
-// Kinda similar to behaviordynamicthinkset in the way it functions
+// Kinda similar to BehaviorDynamicThinkSet in the way it functions
 // one type with union arguments.
 
 // table fetched from

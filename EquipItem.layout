@@ -15,9 +15,7 @@ add_column|Defense|int
 add_column|Stagger|int
 add_column|ItemCap|int
 add_column|GilCost|int
-
-// divide by 10 for key 2, rem for array index.
-add_column|UiArrayIndexForRarity|int
+add_column|UiArrayIndexForRarity|int    // divide by 10 for key 2, rem for array index.
 add_column|IconTexFileId|int
 add_column|EffectFlag|int
 add_column|Name|string|rel
@@ -25,8 +23,7 @@ add_column|Description|string|rel|-4
 add_column|SingularText|string|rel|-8
 add_column|PluralText|string|rel|-12
 
-// uiattributive stuff. Same as Unk16->Unk21 in equipitem
-// 26 is added thee two for id, references String2
+// UiAttributive stuff. Same as Unk16->Unk21 in EquipItem - 26 is added thee two for id, references String2
 add_column|UiAttributiveSingularUnk|byte
 add_column|UiAttributivePluralUnk|byte
 add_column|UiAttributiveUnk3|byte
@@ -39,9 +36,9 @@ add_column|Unk24|string|rel|-24
 add_column|EffectPotency|int
 
 // union
-// 17 = attackparam
-// 42 = command
-// 58 = atktype - procs if the landed attackparam's atktype matches
+// 17 = AttackParam
+// 42 = Command
+// 58 = AtkType - procs if the landed AttackParam's AtkType matches
 // 143 = ?
 add_column|EffectUnions|union[]
 add_column|HP|int
@@ -49,28 +46,12 @@ add_column|GilCostFFMode|int
 add_column|Unk29|int
 add_column|SortOrder1|int
 add_column|WeaponSkinCategoryId|int
-
-// Same as Unk24 in item
-add_column|UnkBool32|byte
-// ref: 48 89 4C 24 ? 48 83 EC ? 45 33 C9 48 8D 54 24
-add_column|Unk33|byte
-
-// ref: 80 78 ? ? 74 ? 8B D7 E8
-// ref2: 80 78 ? ? 74 ? 83 FE
-add_column|Unk34|byte
-
-// ref: 44 38 70 ? 0F 85 ? ? ? ? 8B D3
-add_column|Unk35|byte
-
-// Same as Unk36 in equipitem
-// GetCurrentDifficultyLevel() == 2? flag for whether this is available in a certain difficulty?
-// ref: 48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 41 56 41 57 48 83 EC ? 48 8D 41
-add_column|Unk36|byte
-
-// ref: 48 8B C4 48 89 58 ? 44 89 48 ? 48 89 48 ? 57
-// ref2 (stomp jump limit check for bombardement bit?): 40 38 78 ? 75 ? 48 8B 4D
-add_column|Unk37|byte
-
+add_column|UnkBool32|byte            // Same as Unk24 in item
+add_column|Unk33|byte                // ref: 48 89 4C 24 ? 48 83 EC ? 45 33 C9 48 8D 54 24
+add_column|Unk34|byte                // ref: 80 78 ? ? 74 ? 8B D7 E8, ref2: 80 78 ? ? 74 ? 83 FE
+add_column|Unk35|byte                // ref: 44 38 70 ? 0F 85 ? ? ? ? 8B D3
+add_column|Unk36|byte                // Same as Unk36 in EquipItem - GetCurrentDifficultyLevel() == 2? flag for whether this is available in a certain difficulty? ref: 48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 41 56 41 57 48 83 EC ? 48 8D 41
+add_column|Unk37|byte                // ref: 48 8B C4 48 89 58 ? 44 89 48 ? 48 89 48 ? 57 - ref2 (stomp jump limit check for bombardement bit?): 40 38 78 ? 75 ? 48 8B 4D
 add_column|Unk38|byte
 add_column|Unk39|byte
 add_column|SortOrder2|int

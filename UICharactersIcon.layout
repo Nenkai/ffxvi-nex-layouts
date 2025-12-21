@@ -14,6 +14,7 @@ add_column|Unk5|float
 // 3 = big - 38.0
 // sizes: ffxvi.exe steam 1.0.1 - sub_140372918
 add_column|IconSizeType|int
+
 add_column|Unk7|int
 add_column|LoreDictionaryId1|int
 add_column|LoreDictionaryId1Key2|int

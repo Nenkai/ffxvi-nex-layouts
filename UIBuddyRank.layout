@@ -5,8 +5,5 @@ use_base_row_id|true
 
 // Hardcoded row ids
 add_column|DLCFlags|int
-
-// This is also weird (like uibuddyaction)
-// ffxvi.exe steam 1.0.1 sub_1403537F0
-add_column|UnkOrder|int
+add_column|UnkOrder|int    // This is also weird (like uibuddyaction) - ffxvi.exe steam 1.0.1 sub_1403537F0
 add_column|UiId|int

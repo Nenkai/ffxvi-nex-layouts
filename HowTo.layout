@@ -6,11 +6,8 @@ use_base_row_id|true
 // Hardcoded ids:
 // 158
 
-// Actually checked for this table, 10010, 10020, 10030
-add_column|DLCFlags|int
-
-// 1 = text, 4 = movie
-add_column|DisplayType|int
+add_column|DLCFlags|int                // Actually checked for this table, 10010, 10020, 10030
+add_column|DisplayType|int             // 1 = text, 4 = movie
 add_column|Unk3|int
 add_column|Description|string|rel
 add_column|Title|string|rel|-4
@@ -19,17 +16,15 @@ add_column|Unk7|string
 add_column|Unk8|int
 add_column|Unk9|int
 
-// union(icon, moviedata)
+// union(Icon, MovieData)
 // 266 = icon id, but not a table
-// 316 = moviedata
+// 316 = MovieData
 add_column|AssetIdUnion1|union
 
 // Same union
 add_column|AssetIdUnion2|union
 
-// IF ffmode, use howto redirected by this id
-add_column|HowToIdOverrideFFMode|int
-
+add_column|HowToIdOverrideFFMode|int   // IF ffmode, use HowTo redirected by this id
 add_column|Unk15|int
 add_column|Unk16|byte
 add_column|Unk17|byte

@@ -4,5 +4,4 @@ set_table_category|SingleKeyed
 use_base_row_id|false
 
 add_column|DLCFlags|int
-// 8 entries max
-add_column|UnionArray|union[]
+add_column|UnionArray|union[]      // 8 entries max

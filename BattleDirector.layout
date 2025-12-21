@@ -6,9 +6,7 @@ use_base_row_id|false
 define_struct|Unk2_Struct
 add_struct_column|Type|int
 add_struct_column|field_0x04|int
-
-// When type is 18, this is difficulty or xp related?
-add_struct_column|TypeData|int
+add_struct_column|TypeData|int  // When type is 18, this is difficulty or xp related?
 add_struct_column|field_0x0C|int
 add_struct_column|field_0x10|int
 add_struct_column|LevelSequenceId1|int
@@ -62,8 +60,7 @@ end_struct|
 add_column|DLCFlags|int
 
 // Fetched from
-// 48 83 EC ? 45 33 C0 4C 63 D2 85 D2 78 ? 4C 8B 09 4D 85 C9 75 ? 41 8B C0 EB ? 4D 39 01 7C ? 49 8B C9 E8 ? ? ? ? EB ? 48 8D 05 ? ? ? ? 44 3B 50 ? 7D ? 4D 85 C9 74 ? 4D 39 01 7C ? 49 8B C9 E8 ? ? ? ? 4C 8B C0 EB ? 4C 8D 05 ? ? ? ? 49 63 40
-add_column|Unk2|Unk2_Struct[]
+add_column|Unk2|Unk2_Struct[] // ref: 48 83 EC ? 45 33 C0 4C 63 D2 85 D2 78 ? 4C 8B 09 4D 85 C9 75 ? 41 8B C0 EB ? 4D 39 01 7C ? 49 8B C9 E8 ? ? ? ? EB ? 48 8D 05 ? ? ? ? 44 3B 50 ? 7D ? 4D 85 C9 74 ? 4D 39 01 7C ? 49 8B C9 E8 ? ? ? ? 4C 8B C0 EB ? 4C 8D 05 ? ? ? ? 49 63 40
 
 add_column|Unk3|Unk3_Struct[]
 add_column|Unk4|int

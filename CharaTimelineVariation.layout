@@ -9,10 +9,6 @@ add_column|OptionalFacialMotionId|int
 add_column|Unk4|int
 add_column|MoveParamId|int
 add_column|Comment|string
-
-// chara/c%04u/pack/timeline/t%04u/ <--
-// Also used as an id into charatimelinepaccommonexist, charatimelinepacweaponexist
-add_column|TimelineFileId|short
-
+add_column|TimelineFileId|short   // chara/c%04u/pack/timeline/t%04u/ <-- - Also used as an id into charatimelinepaccommonexist, charatimelinepacweaponexist
 add_column|UnkByte8|byte
 // <implicit 1 byte padding>

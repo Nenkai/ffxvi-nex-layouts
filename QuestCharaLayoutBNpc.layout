@@ -32,7 +32,7 @@ add_column|Unk26|int
 add_column|Unk27|int
 add_column|LayoutNamedInstanceId3|int
 // if true, group instance id from the entity's linked parent.
-// otherwise, uses questcharalayoutbnpc's.
+// otherwise, uses QuestCharaLayoutBNpc's.
 add_column|UseGroupInstanceIdFromMapFile|byte
 add_column|Unk30|byte
 add_column|Unk31|byte

@@ -7,12 +7,8 @@ add_column|DLCFlags|int
 add_column|ActionId|int
 add_column|Unk3|byte
 add_column|Unk4|byte
-
-// Fenrir Orders take priority when Torgal is in Fenrir mode 
-add_column|IsFenrirOrder|byte
-
-// Precision Orders take priority when timed with certain attacks
-add_column|IsPrecisionOrder|byte
+add_column|IsFenrirOrder|byte       // Fenrir Orders take priority when Torgal is in Fenrir mode 
+add_column|IsPrecisionOrder|byte    // Precision Orders take priority when timed with certain attacks
 add_column|Unk7|byte
 add_column|Unk8|byte
 add_column|Unk9|byte

@@ -41,10 +41,7 @@ add_column|Unk28ActionId|int
 add_column|Unk29ActionId|int
 add_column|Unk30ActionId|int
 add_column|UnkFloat31|float
-
-// (TheGodOdin): if 0 you can do combo with attack button, if 1 you can do only the first attack of combo or at max the first burst magic
-add_column|IsHitRequiredToCombo|byte
-
+add_column|IsHitRequiredToCombo|byte   // (TheGodOdin): if 0 you can do combo with attack button, if 1 you can do only the first attack of combo or at max the first burst magic
 add_column|Unk33|byte
 add_column|Unk34|byte
 add_column|Unk35|byte
@@ -53,6 +50,7 @@ add_column|Unk37|byte
 add_column|Unk38|byte
 add_column|Unk39|byte
 
+//-----------------------------------------------
 set_comment|1|0|0|Adult Clive
 set_comment|2|0|0|Arm of Darkness
 set_comment|3|0|0|Teen Clive

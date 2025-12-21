@@ -9,8 +9,7 @@ add_column|Unk3|float
 add_column|Unk4|float
 add_column|ActionIds2|int[]
 add_column|Unk6|float
-// verified float ffxvi_demo.exe 1.0.0 - 14071316B
-add_column|Unk7|float
+add_column|Unk7|float   // verified float ffxvi_demo.exe 1.0.0 - 14071316B
 add_column|Unk8|byte
 add_column|Unk9|byte
 add_column|Unk10|byte

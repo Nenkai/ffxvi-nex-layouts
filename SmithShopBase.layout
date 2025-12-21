@@ -12,9 +12,7 @@ add_column|ShopTalkId4|int
 add_column|ShopTalkId5|int
 add_column|ShopTalkId6|int
 add_column|UiId|int
-
-// Checked against bools in recipe, after IsReinforce?
-add_column|Unk10|int
+add_column|Unk10|int         // Checked against bools in recipe, after IsReinforce?
 
 set_comment|9|||The Black Hammer
 set_comment|10|||The Black Hammer

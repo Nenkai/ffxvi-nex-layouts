@@ -16,8 +16,9 @@ add_column|Unk3|int
 add_column|FieldEventTypeId|int
 
 // union
-// 55 - layoutnamedinstance
+// 55 - LayoutNamedInstance
 add_column|LocationUnions|union[]
+
 add_column|Unk6|int
 add_column|Comment1|string
 add_column|Comment2|string

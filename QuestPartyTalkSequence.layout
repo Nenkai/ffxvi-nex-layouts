@@ -13,10 +13,8 @@ add_column|Unk9|int[]
 add_column|UnkUnionArray11|union[]
 add_column|Unk13|int
 add_column|Unk14|int
-// unsure
-add_column|Unk15|int[]
-// unsure
-add_column|Unk17|int[]
+add_column|Unk15|int[]  // unsure
+add_column|Unk17|int[]  // unsure
 add_column|Unk19|int
 add_column|Unk20|int
 add_column|Unk21|int

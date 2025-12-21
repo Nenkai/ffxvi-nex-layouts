@@ -7,9 +7,5 @@ use_base_row_id|false
 // Key3 = equip index
 
 add_column|DLCFlags|int
-
-// item/equipitem
-add_column|ItemUnion|union
-
-// Maybe?
-add_column|ItemCap|int
+add_column|ItemUnion|union   // Item/Equipitem
+add_column|ItemCap|int       // Maybe?

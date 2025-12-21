@@ -14,7 +14,7 @@ add_column|ItemCount4|int
 add_column|ItemCount5|int
 add_column|ItemCount6|int
 
-// 124 = id from item table
+// 124 = id from Item table
 add_column|RewardUnion1|union
 add_column|RewardUnion2|union
 add_column|RewardUnion3|union

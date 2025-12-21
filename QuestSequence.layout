@@ -12,35 +12,35 @@ use_base_row_id|false
 // Key2 is QuestSequenceValue
 
 // union
-// 46 = defaulttalk
-// 55 = layoutnamedinstance
+// 46 = DefaultTalk
+// 55 = LayoutNamedInstance
 // 108
-// 114 = sidequestbattledirector
-// 124 = item
-// 127 = levelcutscene
-// 131 = partytalk
-// 135 = droptable
-// 192 = cutsceneset
+// 114 = SideQuestBattleDirector
+// 124 = Item
+// 127 = LevelCutscene
+// 131 = PartyTalk
+// 135 = DropTable
+// 192 = CutsceneSet
 // 198 = 
 // 208
-// 256 = partymember
-// 260 = scenariocutscene
-// 273 = worldmapanchor
-// 317 = gamemap
-// 359 = missionbattledirector
-// 375 = mapdirectorsequence
-// 458 = usersituationflag
-// 494 = battleblockdirector
+// 256 = PartyMember
+// 260 = ScenarioCutscene
+// 273 = WorldMapAnchor
+// 317 = GameMap
+// 359 = MissionBattleDirector
+// 375 = MapDirectorSequence
+// 458 = UserSituationFlag
+// 494 = BattleBlockDirector
 // 528
 // 577
 // 613
 // 702
-// 831 = cutsceneconnect
-// 841 = questcutscene
-// 854 = behavioreventdirector
-// 856 = simpleevent
+// 831 = CutsceneConnect
+// 841 = QuestCutscene
+// 854 = BehaviorEventDirector
+// 856 = SimpleEvent
 // 890
-// 942 = simpleeventselect
+// 942 = SimpleEventSelect
 // 945
 add_column|DLCFlags|int
 add_column|Comment|string
@@ -51,7 +51,7 @@ add_column|TaskProgressCount|int
 // Types
 // (handled in 48 8B C4 48 89 58 ? 48 89 70 ? 55 57 41 54 41 56 41 57 48 8D A8 ? ? ? ? 48 81 EC ? ? ? ? C5 F8 29 70 ? 48 8B 05 ? ? ? ? 48 33 C4 48 89 85 ? ? ? ? 8B 41)
 // 2
-// 4 = partytalk (while on the way to next quest marker)
+// 4 = PartyTalk (while on the way to next quest marker)
 // 6 = move next sequence
 // 7
 // 8
@@ -69,12 +69,12 @@ add_column|TaskProgressCount|int
 // 22 = default talk related
 // 23
 // 24
-// 27 = item related
+// 27 = Item related
 // 28
 // 29
 // 50
 // 51
-// 52 = simpleevent discussion
+// 52 = SimpleEvent discussion
 // 54
 // 55
 // 56

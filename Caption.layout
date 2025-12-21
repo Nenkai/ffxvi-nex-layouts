@@ -5,7 +5,7 @@ use_base_row_id|false
 
 add_column|DLCFlags|int
 
-// this is a union(placename, captionfreeword)
-// 147 = placename
-// 664 = captionfreeword
+// this is a union(Placename, CaptionFreeword)
+// 147 = Placename
+// 664 = CaptionFreeword
 add_column|NameUnion|union

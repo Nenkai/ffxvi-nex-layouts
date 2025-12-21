@@ -8,26 +8,14 @@ use_base_row_id|false
 
 add_column|DLCFlags|int
 add_column|Comment|string
-
 add_column|BNpcBaseIds|int[]
-
-// Party level
-add_column|ParamGrowId|int
-
-// Linked to BNpcBaseIds
-add_column|UnkCounts1|byte[]
-
-add_column|BNpcBaseIds2|int[]
-// Linked to BNpcBaseIds2
-add_column|Unk7|byte[]
-
-// Linked to BNpcBaseIds
-add_column|UnkCounts2|byte[]
-
-// Sets torgal stats to 0??
-add_column|UnkUiRelated|byte
-// used in skill for point refunding
-add_column|UnkSkillRefundPoints|byte
+add_column|ParamGrowId|int             // Party level
+add_column|UnkCounts1|byte[]           // Linked to BNpcBaseIds
+add_column|BNpcBaseIds2|int[]          
+add_column|Unk7|byte[]                 // Linked to BNpcBaseIds2
+add_column|UnkCounts2|byte[]           // Linked to BNpcBaseIds
+add_column|UnkUiRelated|byte           // Sets torgal stats to 0??
+add_column|UnkSkillRefundPoints|byte   // used in skill for point refunding
 
 // ref: ffxvi.exe+0x458347, ffxvi.exe+0x4587a0
 add_column|UnkMember1|sbyte

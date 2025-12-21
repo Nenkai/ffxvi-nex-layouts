@@ -10,9 +10,5 @@ add_column|Unk2|int
 add_column|Unk3|int
 add_column|Unk4|string
 add_column|Comment|string
-
-// - animation/chara/c%04u/pack/animation/head/h%04u/animation.pac
-// Also used for indexing into animpacexisthead
-add_column|HeadAnimationFileId|short
-
+add_column|HeadAnimationFileId|short   // animation/chara/c%04u/pack/animation/head/h%04u/animation.pac - Also used for indexing into AnimPacExistHead
 add_column|HeadModelFileId|short

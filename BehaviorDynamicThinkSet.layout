@@ -22,27 +22,27 @@ add_column|UnkType2|int
 // 7 - no args
 // 8 - no args
 // 9-11 unused
-// 12 - behaviordialogueactionset
+// 12 - BehaviorDialogueActionSet
 // 13-14 unused
 // 15 - no args
-// 16 - behaviorwaitparam?
-// 17 - behavioreventidlestateparam? doesn't seem right, weird
-// 21 - behavioreventactionset
-// 22 - behavioreventactionset
-// 23 - behavioreventactionset
-// 24 - behavioreventactionsequence
-// 25 - behavioreventactionsequence
-// 26 - behavioreventactionsequence
+// 16 - BehaviorWaitparam?
+// 17 - BehaviorEventIdleStateParam? doesn't seem right, weird
+// 21 - BehaviorEventActionSet
+// 22 - BehaviorEventActionSet
+// 23 - BehaviorEventActionSet
+// 24 - BehaviorEventActionSequence
+// 25 - BehaviorEventActionSequence
+// 26 - BehaviorEventActionSequence
 // 27 - no args
 // 28 - no args
 // 29 - no args
 // 30 - no args
-// 31 - behaviorlookatactparam
-// 32 - behavioreventactionset?
+// 31 - BehaviorLookAtActParam
+// 32 - BehaviorEventActionSet?
 // 33 - no args
-// 34 - behavioreventidlestateparam?
-// 35 - behavioreventidlestateparam?
-// 36 - behavioreventidlestateparam?
+// 34 - BehaviorEventIdleStateParam?
+// 35 - BehaviorEventIdleStateParam?
+// 36 - BehaviorEventIdleStateParam?
 // 37 - no args
 // 38 - no args
 // 39 - no args
@@ -50,12 +50,12 @@ add_column|UnkType2|int
 // 41 - no args
 // 42 - no args
 // 43 - no args
-// 44 - behavioreventactionset
-// 45 - behavioreventactionset?
-// 46 - behavioreventactionsequence?
-// 47 - behavioreventactionsequence?
-// 48 - behaviorlookatactparam
-// 49 - behavioreventactionset
+// 44 - BehaviorEventActionSet
+// 45 - BehaviorEventActionSet?
+// 46 - BehaviorEventActionSequence?
+// 47 - BehaviorEventActionSequence?
+// 48 - BehaviorLookAtActParam
+// 49 - BehaviorEventActionSet
 add_column|BehaviorActId|int
 
 add_column|BehaviorActArgumentUnion|union

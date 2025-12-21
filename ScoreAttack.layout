@@ -10,9 +10,7 @@ add_column|GameMapId|int
 add_column|GameMapIdKey2|int
 add_column|LayoutNamedInstanceId|int
 add_column|QuestId|int
-
-// Used for getting name
-add_column|WorldMapAnchorId|int
+add_column|WorldMapAnchorId|int         // Used for getting name
 add_column|ScoreAttackPlayerSetId|int
 
 // Grouped

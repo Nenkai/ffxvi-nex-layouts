@@ -16,8 +16,7 @@ add_column|UnlockConditionUnion|union
 
 add_column|Unk9|int
 add_column|SortOrder|int
-// type from 1 to 6
-add_column|Unk11|int
+add_column|Unk11|int                    // type from 1 to 6
 add_column|IsDefault|int
 
 

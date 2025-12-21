@@ -12,8 +12,8 @@ add_column|Unk6|int
 add_column|ReqUserSituationId|int
 
 // union(placename)?
-// 147 = placename
-// 1138 = fieldmapobelisk
+// 147 = PlaceName
+// 1138 = FieldMapObelisk
 add_column|IdUnion|union
 
 add_column|ShopBaseId|int

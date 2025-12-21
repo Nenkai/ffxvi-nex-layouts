@@ -33,17 +33,17 @@ add_column|DLCFlags|int
 // Handler: 40 55 53 56 57 41 56 48 8B EC 48 83 EC ? 44 8B 52
 // 1 = quest not completed?
 // 2 = quest completed?
-// 3 = questprogress (value1 < 0)
-// 4 = questprogress (value1 <= 0)
-// 5 = questprogress (value1 == 0)
-// 6 = questprogress (value1 >= 0)
-// 7 = questprogress (value1 > 0)
-// 8 = questprogress (current >= value1 && current <= value2)
-// 9 = questprogress (current >= value1 && current < value2)
-// 10 = questprogress (current > value1 && current <= value2)
-// 11 = questprogress (current > value1 && current < value2)
-// 12 = questdiscardlist (?)
-// 13 = questdiscardlist (?)
+// 3 = QuestProgress (value1 < 0)
+// 4 = QuestProgress (value1 <= 0)
+// 5 = QuestProgress (value1 == 0)
+// 6 = QuestProgress (value1 >= 0)
+// 7 = QuestProgress (value1 > 0)
+// 8 = QuestProgress (current >= value1 && current <= value2)
+// 9 = QuestProgress (current >= value1 && current < value2)
+// 10 = QuestProgress (current > value1 && current <= value2)
+// 11 = QuestProgress (current > value1 && current < value2)
+// 12 = QuestDiscardList (?)
+// 13 = QuestDiscardList (?)
 // 16 = has completed quest 36000? (Echoes of the Fallen)
 // 17 = has completed quest 36001? (The Rising Tide)
 // 18 = something to do with quest 36000
@@ -51,54 +51,54 @@ add_column|DLCFlags|int
 // 100 = in save -> something in UserData's userflags
 // 108 = in save -> EventData (branch a)
 // 109 = in save -> EventData (branch b)
-// 110 = HAS usersituationflag
-// 111 = NOT usersituationflag
-// 114 = HAS mapdirectorflag
-// 115 = NOT mapdirectorflag
-// 116 = difficultylevel
-// 117 = has equipped item (equipitem)
-// 118 = has letter
-// 119 = has icondiscovery
+// 110 = HAS UserSituationFlag
+// 111 = NOT UserSituationFlag
+// 114 = HAS MapDirectorFlag
+// 115 = NOT MapDirectorFlag
+// 116 = DifficultyLevel
+// 117 = has equipped item (EquipItem)
+// 118 = has Letter
+// 119 = has IconDiscovery
 // 120 = min player level (current level >= value1) 
 // 121 = max player level (current level <= value1)
 // 122 = player level (currentlevel >= value1 && current level <= value2)
-// 123 = simpleevent (?)
-// 124 = simpleevent (?)
+// 123 = SimpleEvent (?)
+// 124 = SimpleEvent (?)
 // 125 = min number of drinks for self? (save SafeHouseData->barCount_Oneself_) (current >= value1)
 // 126 = number of drinks for self? range. (save SafeHouseData->barCount_Oneself_) (current >= value1 && current < value2)
 // 127 = number of drinks for party? (save SafeHouseData->barCount_Somebody_) (current >= value1)
 // 128 = simpleevent (checks SimpleEventData?)
-// 129 = thousand thomes level (checks loredictionarylevel table, stores data in LoreDictionaryListData in save)
-// 130 = HAS. questsimpleventsequence or simpleeventsequencerandomset (union 943).
-// 131 = NOT. questsimpleventsequence or simpleeventsequencerandomset (union 943).
+// 129 = thousand thomes level (checks LoreDictionaryLevel table, stores data in LoreDictionaryListData in save)
+// 130 = HAS. QuestSimpleEventSequence or SimpleEventSequenceRandomSet (union 943).
+// 131 = NOT. QuestSimpleEventSequence or SimpleEventSequenceRandomSet (union 943).
 // 132 = min renown
 // 133 = max renown
-// 134 = fieldmapdiscoverymask (aka ShowAreaNameData bit in save?)
-// 135 = loredictionaryenemycategory, referenced by bnpcbase. (checks data from LoreDictionaryEnemyData in save) 
-// 136 = layoutnamedinstance
+// 134 = FieldMapDiscoveryMask (aka ShowAreaNameData bit in save?)
+// 135 = LoreDictionaryEnemyCategory, referenced by bnpcbase. (checks data from LoreDictionaryEnemyData in save) 
+// 136 = LayoutNamedInstance
 // 137 = partytalk, (internally: partytalk->GameMapId, checks into either MapGimmickData_ or PartyTalkData in save depending on UnkType12?)
 // 138 = partytalk, unknown
 // 200 = ? 1 - related to a battle or npc director? (current >= value1)
 // 201 = ? 1 - related to a battle or npc director? range. (current >= value1 && current < value2)
-// 205 = HAS hunted mob? (checks smobdirector)
-// 206 = NOT hunted mob? (checks smobdirector)
+// 205 = HAS hunted mob? (checks SMobDirector)
+// 206 = NOT hunted mob? (checks SMobDirector)
 // 207 = ? 2 - unknown director related  (current >= value)
 // 208 = ? 2 - unknown director related (current < value1)
 // 209 = ? 2 - unknown director related range. (current >= value1 && current < value2)
 // 210 = ? 3 - unknown director (current >= value1)
-// 211 = current summon/eikon (summonmode, checks PlayerData->summonCurrentIndex_)
-// 250 = has bnpcbase?
+// 211 = current summon/eikon (SummonMode, checks PlayerData->summonCurrentIndex_)
+// 250 = has BNpcBase?
 
 // 300 = check IconDiscoveryData in save?
 
 // 400 = ? save related
 // 401 = ? save user flags related
-// 402 = check uichronicleperiod 200500? Unk1 = 7
-// 403 = check uichronicleperiod 300000?
+// 402 = check UIChroniclePeriod 200500? Unk1 = 7
+// 403 = check UIChroniclePeriod 300000?
 // 404 = ? always false?
-// 405 = check uichronicleperiod 300000?
-// 406 = check loredictionary 520010?
-// 407 = check loredictionary 545010?
+// 405 = check UIChroniclePeriod 300000?
+// 406 = check LoreDictionary 520010?
+// 407 = check LoreDictionary 545010?
 
 // 1000 = false
 // 1001 = true

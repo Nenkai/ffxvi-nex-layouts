@@ -16,15 +16,14 @@ add_column|LevelSequenceId|int
 add_column|ReqUserSituationId|int
 
 // union (but not actually?)
-// 146 = bgmmode
-// 314 = bgmselect
+// 146 = BGMMode
+// 314 = BGMSelect
 add_column|BgmUnion1|union16
 add_column|BgmUnion2|union16
 
 add_column|PartyUnion|union16
 
-// Same - demo 1.0.0 -> 140451DF6
-add_column|QuestId|int
+add_column|QuestId|int        // Same - demo 1.0.0 -> 140451DF6
 
 // ffxvi.exe steam 1.0.1 -> 1402681E0 (checked against 3), 14044C441 & 140464271 (2), 140462505 (1)
 // Used in 48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 48 83 EC ? 8D 82 for usersituation check
@@ -36,13 +35,8 @@ add_column|SpecialAreaId|int
 add_column|Unk14|int
 add_column|CollisionMaterialColorId|int
 add_column|Unk16|byte
-
-// Related to hara/map/pack/timeline/m%06u/s%04u/timeline.pac?
-// retail 1.0.0 -> 1407E1BA0
-add_column|Unk16_2|byte
-
-// calls something in sound if true - retail 1.0.0 -> 14043D3BA
-add_column|Unk16_3|byte
+add_column|Unk16_2|byte       // Related to chara/map/pack/timeline/m%06u/s%04u/timeline.pac? - retail 1.0.0 -> 1407E1BA0
+add_column|Unk16_3|byte       // calls something in sound if true - retail 1.0.0 -> 14043D3BA
 add_column|Unk16_4|byte
 
 add_column|PlaceNameId|int

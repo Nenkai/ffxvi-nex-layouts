@@ -23,10 +23,8 @@ add_column|Unk12|int
 add_column|Unk13|float
 add_column|LungeCommandId|int
 add_column|DownthrustCommandId|int
-// R2 + Square
-add_column|AbilityCommandId1|int
-// R2 + Triangle
-add_column|AbilityCommandId2|int
+add_column|AbilityCommandId1|int               // R2 + Square
+add_column|AbilityCommandId2|int               // R2 + Triangle
 add_column|MagicCommandId|int
 add_column|ChargedMagicCommandId|int
 add_column|JumpCommandId|int
@@ -35,10 +33,7 @@ add_column|PrecisionDodgeActionIds|int[]
 add_column|Comment|string
 add_column|DefaultPrecisionDodgeActionId|int
 add_column|TauntCommandId|int
-
-// overrides consumable item tab when not set to 0
-add_column|DPadRightCommandId|int
-
+add_column|DPadRightCommandId|int              // overrides consumable item tab when not set to 0
 add_column|Unk27|int
 add_column|Unk28|int
 add_column|Unk29|byte

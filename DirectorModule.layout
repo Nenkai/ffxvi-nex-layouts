@@ -18,21 +18,21 @@ add_column|ModuleType|int
 // 0
 // 23
 // 41
-// 55 = layoutnamedinstance
+// 55 = LayoutNamedInstance
 // 373
 // 382
-// 399 = directoractorlist
+// 399 = DirectorActorList
 // 454
 // 486
 // 491
-// 494 = battleblockdirector
+// 494 = BattleBlockDirector
 // 528
 // 545
 // 557
-// 568 = directoractormonitor
+// 568 = DirectorActorMonitor
 // 577
-// 655 = mapdirectorsequence
-// 935 = directormovecustomspeedparam
+// 655 = MapDirectorSequence
+// 935 = DirectorMoveCustomSpeedParam
 // 1027
 // 1044
 // 1255

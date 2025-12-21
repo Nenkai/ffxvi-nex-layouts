@@ -3,7 +3,7 @@ set_table_type|SingleKeyed
 set_table_category|SingleKeyed
 use_base_row_id|true
 
-// Accessed from item/equipitem
+// Accessed from Item/EquipItem
 
 add_column|DLCFlags|int
 

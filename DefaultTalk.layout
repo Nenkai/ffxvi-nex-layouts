@@ -9,8 +9,8 @@ add_column|Unk3|int
 
 // union
 // 82 = ?
-// 204 = questprogress
-// 277 = usersituation
+// 204 = QuestProgress
+// 277 = UserSituation
 add_column|UnkUnion1|union
 add_column|UnkUnion2|union
 add_column|Unk8|int
@@ -24,8 +24,8 @@ add_column|GameMapIdKey2|int
 add_column|TalkSequenceChances|int[]
 
 // union
-// 845 = maindefaulttalksequence
-// 846 = questdefaulttalksequence
+// 845 = MainDefaultTalkSequence
+// 846 = QuestDefaultTalkSequence
 add_column|DefaultTalkSequenceUnions|union[]
 
 add_column|Comment|string
@@ -37,7 +37,7 @@ add_column|Unk25|float
 add_column|Unk26|float
 
 // union
-// 55 = layoutnamedinstance
+// 55 = LayoutNamedInstance
 add_column|UnkLocationUnions|union[]
 
 add_column|SpeakerId|int

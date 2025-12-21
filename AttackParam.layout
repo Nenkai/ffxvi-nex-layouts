@@ -4,17 +4,9 @@ set_table_category|DoubleKeyed
 use_base_row_id|false
 
 add_column|DLCFlags|int
-
-// Checked against hardcoded numbers i.e 3
-add_column|UnkType2|int
-
-// Recoome: total dmg dealt is 
-// AttackValue / 100 * AtkAttribute (the one in the menu, based on your level/gear)
-add_column|AttackValue|int
-
-// Checked against hardcoded numbers i.e 3
-add_column|UnkType4|int
-
+add_column|UnkType2|int                        // Checked against hardcoded numbers i.e 3
+add_column|AttackValue|int                     // Recoome: total dmg dealt is AttackValue / 100 * AtkAttribute (the one in the menu, based on your level/gear)
+add_column|UnkType4|int                        // Checked against hardcoded numbers i.e 3
 add_column|Unk5|int
 add_column|Unk6|int
 add_column|Unk7|float
@@ -24,21 +16,14 @@ add_column|Unk10|int
 add_column|Unk11|int
 add_column|Unk12|int[]
 add_column|Unk13|int
-
-// ref: 41 8B 52 ? C5 E0 57 DB
-add_column|CameraFCurveId|int
-
-// ref: 8B 50 ? 41 B8 ? ? ? ? 48 8B CE
-add_column|UnkType15|int
-
+add_column|CameraFCurveId|int                  // ref: 41 8B 52 ? C5 E0 57 DB
+add_column|UnkType15|int                       // ref: 8B 50 ? 41 B8 ? ? ? ? 48 8B CE
 add_column|Unk16|int[]
 add_column|Unk17|int
 add_column|Unk18|int
 add_column|Unk19|int
 add_column|Unk20|float
-
-// ref: 44 8B 78 ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 1D
-add_column|DamageReactionId|int
+add_column|DamageReactionId|int                // ref: 44 8B 78 ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 1D
 add_column|Unk22|int
 add_column|Unk23|int
 add_column|Unk24|int
@@ -47,47 +32,28 @@ add_column|Unk26|int
 add_column|Unk27|int
 add_column|Unk28|int
 add_column|Unk29|int
-
-// ref: 8B 40 ? 89 86
-add_column|Unk30|float
-
-// Checked against hardcoded numbers i.e 2
-add_column|UnkType31|int
-
+add_column|Unk30|float                         // ref: 8B 40 ? 89 86
+add_column|UnkType31|int                       // Checked against hardcoded numbers i.e 2
 add_column|Unk32|int
 add_column|Unk33|float
 add_column|Unk34|int
 add_column|Unk35|int
 add_column|Unk36|int
 add_column|Unk37|int
-add_column|GuardReactionId|int
+add_column|GuardReactionId|int                 
 add_column|Unk39|int
 add_column|Unk40|float
-
-// May be checked against LayoutNamedInstanceId1Maybe in aiactionselector?? super weird
-// see ffxvi.exe steam 1.0.1 - 1404D3849
-add_column|Unk41|int
-
-add_column|Unk42|int
-add_column|Unk43|int
-
-// Checked against hardcoded numbers i.e 1, 2
-add_column|UnkType44|int
-
+add_column|Unk41|int                           // May be checked against LayoutNamedInstanceId1Maybe in AIActionSelector?? super weird - see ffxvi.exe steam 1.0.1 - 1404D3849
+add_column|Unk42|int                           
+add_column|Unk43|int                           
+add_column|UnkType44|int                       // Checked against hardcoded numbers i.e 1, 2
 add_column|Unk45|int
 add_column|Unk46|int
 add_column|Unk47TitleRelatedToUnk5|int
-
-// Same as unk15?
-// ref: 8B 97 ? ? ? ? 41 B8 ? ? ? ? 48 8B CE
-// or just attack category
-add_column|FixedPaletteAttackCategoryId|int
-
+add_column|FixedPaletteAttackCategoryId|int   // Same as unk15? or just attack category - ref: 8B 97 ? ? ? ? 41 B8 ? ? ? ? 48 8B CE
 add_column|BuffIdMaybe|int
 add_column|Duration|float
-
-// Checked against hardcoded numbers
-add_column|UnkType51|int
+add_column|UnkType51|int                      // Checked against hardcoded numbers
 
 // ref: 8B A8 ? ? ? ? 48 8B FB
 // ref2: 8B B8 ? ? ? ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D ? ? ? ? 48 85 C9 0F 84 ? ? ? ? BA ? ? ? ? E8 ? ? ? ? 48 89 05 ? ? ? ? 48 85 C0 0F 84 ? ? ? ? 8B D7 48 8B C8 E8 ? ? ? ? 4C 8B C0 48 85 C0 0F 84 ? ? ? ? 48 83 38 ? 7C ? 48 8B C8 E8 ? ? ? ? 48 85 C0 0F 84 ? ? ? ? 49 83 38 ? 7C ? 49 8B C8 E8 ? ? ? ? 48 8B D8 80 7B
@@ -95,178 +61,76 @@ add_column|UnkType51|int
 // ref4: 8B B8 ? ? ? ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D ? ? ? ? 48 85 C9 74 ? BA ? ? ? ? E8 ? ? ? ? 48 89 05 ? ? ? ? 48 85 C0 74 ? 8B D7 48 8B C8 E8 ? ? ? ? 4C 8B C0 48 85 C0 74 ? 4C 8B 08 4D 85 C9 78 ? 48 8B C8 E8 ? ? ? ? 48 85 C0 74 ? 4D 85 C9 78 ? 49 8B C8 E8 ? ? ? ? EB ? 48 8B C3
 add_column|BattleScoreAttackCategoryId|int
 
-// ref: 44 8B A8 ? ? ? ? 48 8B 84 24
-add_column|WillDamage|int
 
-// ref: 8B 89 ? ? ? ? 83 E9 ? 74 ? 83 F9 ? 74 ? 4D 8B C4
-add_column|Unk54|int
-
+add_column|WillDamage|int                     // ref: 44 8B A8 ? ? ? ? 48 8B 84 24
+add_column|Unk54|int                          // ref: 8B 89 ? ? ? ? 83 E9 ? 74 ? 83 F9 ? 74 ? 4D 8B C4
 add_column|Comment|string
 add_column|AtkType|int
 
-// 541 - vacuumedmoveparam (ref: 66 39 88 ? ? ? ? 0F 85) - Unk21 must be 16?
+// 541 - VacuumedMoveParam (ref: 66 39 88 ? ? ? ? 0F 85) - Unk21 must be 16?
 // 155 - ?
 // ? - attackmovestraight
-
 add_column|Unk57|union16
 
-// Limit break gain on attack
-add_column|LimitGain|short
-
-// Zantetsuken gain on attack
-// ref: 0F B7 80 ? ? ? ? 89 86 ? ? ? ? 8B 45
-// ref2: 0F B7 88 ? ? ? ? B8 ? ? ? ? F7 E1 D1 EA 48 8B CF
-// ref3: 0F B7 90 ? ? ? ? E9
-add_column|ZantetsukenGain|short
-
+add_column|LimitGain|short                    // Limit break gain on attack
+add_column|ZantetsukenGain|short              // Zantetsuken gain on attack - ref: 0F B7 80 ? ? ? ? 89 86 ? ? ? ? 8B 45, ref2: 0F B7 88 ? ? ? ? B8 ? ? ? ? F7 E1 D1 EA 48 8B CF, ref3: 0F B7 90 ? ? ? ? E9
 add_column|Unk59_1|byte
 add_column|Unk59_2|byte
 add_column|Unk59_3|byte
-
-// ref: 40 38 B0 ? ? ? ? 0F 85 ? ? ? ? 4D 85 C0
-// ref2: 44 38 90 ? ? ? ? 0F 85
-// ref3: 80 B8 ? ? ? ? ? 0F 85 ? ? ? ? C5 F8 2F 3D
-// ref4: 44 38 B8 ? ? ? ? 0F 85 ? ? ? ? 4D 85 C0 75
-// ref5: 80 B8 ? ? ? ? ? 0F 85 ? ? ? ? 4D 85 C0 75
-// & more
-add_column|UnkBool59_4|byte
-
-// ref: 44 38 A0 ? ? ? ? 0F 84 ? ? ? ? 49 8B 46
-// ref: 38 98 ? ? ? ? 75 ? 49 8B CE
-add_column|UnkBool60_1|byte
-
-// ref: 44 38 A0 ? ? ? ? 74 ? 48 8B 44 24
-// ref2: 38 98 ? ? ? ? 0F 84 ? ? ? ? 41 83 FF ? 75 ? 49 8B CE E8 ? ? ? ? 48 8B 08 48 85 C9 75 ? 48 8B C3 EB ? 48 39 19 7C ? E8 ? ? ? ? EB ? 48 8D 05 ? ? ? ? 38 98 ? ? ? ? 0F 84
-add_column|UnkBool60_2|byte
-
-// ref: 80 B8 ? ? ? ? ? 74 ? 33 D2 49 8B CB E8 ? ? ? ? 84 C0 0F 85 ? ? ? ? 48 8B 0B
-add_column|UnkBool60_3|byte
-
-// ref: 38 98 ? ? ? ? 0F 84 ? ? ? ? 41 83 FF ? 75 ? 49 8B CE E8 ? ? ? ? 48 8B 08 48 85 C9 75 ? 48 8B C3 EB ? 48 39 19 7C ? E8 ? ? ? ? EB ? 48 8D 05 ? ? ? ? 38 98 ? ? ? ? 75
-add_column|UnkBool60_4|byte
-
+add_column|UnkBool59_4|byte                   // ref: 40 38 B0 ? ? ? ? 0F 85 ? ? ? ? 4D 85 C0, ref2: 44 38 90 ? ? ? ? 0F 85, ref3: 80 B8 ? ? ? ? ? 0F 85 ? ? ? ? C5 F8 2F 3D, ref4: 44 38 B8 ? ? ? ? 0F 85 ? ? ? ? 4D 85 C0 75, ref5: 80 B8 ? ? ? ? ? 0F 85 ? ? ? ? 4D 85 C0 75 & more
+add_column|UnkBool60_1|byte                   // ref: 44 38 A0 ? ? ? ? 0F 84 ? ? ? ? 49 8B 46, ref2: 38 98 ? ? ? ? 75 ? 49 8B CE
+add_column|UnkBool60_2|byte                   // ref: 44 38 A0 ? ? ? ? 74 ? 48 8B 44 24, ref2: 38 98 ? ? ? ? 0F 84 ? ? ? ? 41 83 FF ? 75 ? 49 8B CE E8 ? ? ? ? 48 8B 08 48 85 C9 75 ? 48 8B C3 EB ? 48 39 19 7C ? E8 ? ? ? ? EB ? 48 8D 05 ? ? ? ? 38 98 ? ? ? ? 0F 84
+add_column|UnkBool60_3|byte                   // ref: 80 B8 ? ? ? ? ? 74 ? 33 D2 49 8B CB E8 ? ? ? ? 84 C0 0F 85 ? ? ? ? 48 8B 0B
+add_column|UnkBool60_4|byte                   // ref: 38 98 ? ? ? ? 0F 84 ? ? ? ? 41 83 FF ? 75 ? 49 8B CE E8 ? ? ? ? 48 8B 08 48 85 C9 75 ? 48 8B C3 EB ? 48 39 19 7C ? E8 ? ? ? ? EB ? 48 8D 05 ? ? ? ? 38 98 ? ? ? ? 75
 add_column|CantKillTarget|byte
-
-// ref: 80 B8 ? ? ? ? ? 74 ? 33 D2 49 8B CB E8 ? ? ? ? 84 C0 0F 84
-add_column|CantHitStandingTarget|byte
-
-// ref: 80 B8 ? ? ? ? ? 74 ? 33 D2 49 8B CB E8 ? ? ? ? 84 C0 0F 85 ? ? ? ? 41 F6 83
-add_column|CantHitAirborneTarget|byte
-
-// ref: 80 B8 ? ? ? ? ? 74 ? B2 ? 48 8B CE
-add_column|CantHitGroundedTarget|byte
-
-// ref: 44 39 A0 ? ? ? ? 0F 84 ? ? ? ? C5 FA 10 87
-// ref2: 44 8B B8 ? ? ? ? 49 8B DC
-add_column|GuardDataId|int
-
-// ref: 44 38 90 ? ? ? ? 8B 86
-// ref2: 80 BF ? ? ? ? ? 41 0F 45 C0
-// ref3: 38 98 ? ? ? ? 0F 85 ? ? ? ? 41 8B 85
-add_column|Unk63_1|byte
-
+add_column|CantHitStandingTarget|byte         // ref: 80 B8 ? ? ? ? ? 74 ? 33 D2 49 8B CB E8 ? ? ? ? 84 C0 0F 84
+add_column|CantHitAirborneTarget|byte         // ref: 80 B8 ? ? ? ? ? 74 ? 33 D2 49 8B CB E8 ? ? ? ? 84 C0 0F 85 ? ? ? ? 41 F6 83
+add_column|CantHitGroundedTarget|byte         // ref: 80 B8 ? ? ? ? ? 74 ? B2 ? 48 8B CE
+add_column|GuardDataId|int                    // ref: 44 39 A0 ? ? ? ? 0F 84 ? ? ? ? C5 FA 10 87, ref2: 44 8B B8 ? ? ? ? 49 8B DC
+add_column|Unk63_1|byte                       // ref: 44 38 90 ? ? ? ? 8B 86, ref2: 80 BF ? ? ? ? ? 41 0F 45 C0, ref3: 38 98 ? ? ? ? 0F 85 ? ? ? ? 41 8B 85
 add_column|Unk63_2|byte
 add_column|Unk63_3|byte
 add_column|Unk63_4|byte
 add_column|Unk64_1|byte
-
-// ref: 45 0F B6 87
-add_column|Unk64_2|byte
-
-// ref: 0 B8 ? ? ? ? ? 0F 84 ? ? ? ? 48 85 DB 74
-// ref2: 40 38 B8 ? ? ? ? 74 ? 40 B7 ? 41 8B 42
-// ref3: 44 38 A0 ? ? ? ? 0F 84 ? ? ? ? 49 8D 4D
-// & many more
-add_column|UnkBool64_3|byte
-
+add_column|Unk64_2|byte                       // ref: 45 0F B6 87
+add_column|UnkBool64_3|byte                   // ref: 0 B8 ? ? ? ? ? 0F 84 ? ? ? ? 48 85 DB 74, ref2: 40 38 B8 ? ? ? ? 74 ? 40 B7 ? 41 8B 42, ref3: 44 38 A0 ? ? ? ? 0F 84 ? ? ? ? 49 8D 4D & many more
 add_column|Unk64_4|byte
-
-// ref: 80 B8 ? ? ? ? ? 74 ? 41 83 FA
-add_column|UnkBool65_1|byte
-
+add_column|UnkBool65_1|byte                   // ref: 80 B8 ? ? ? ? ? 74 ? 41 83 FA
 add_column|Unk65_2|byte
 add_column|Unk65_3|byte
-
-// ref: 41 38 BA ? ? ? ? 40 0F 94 C7
-// ref2: 41 38 BA ? ? ? ? 0F 85
-// ref3: 38 98 ? ? ? ? 75 ? 41 83 FF ? 75 ? 41 8B 44 24
-add_column|Unk65_4|byte
-
-// ref: 80 B8 ? ? ? ? ? 74 ? 8B 87 ? ? ? ? 83 F8
-add_column|UnkBool66_1|byte
-
+add_column|Unk65_4|byte                       // ref: 41 38 BA ? ? ? ? 40 0F 94 C7, ref2: 41 38 BA ? ? ? ? 0F 85, ref3: 38 98 ? ? ? ? 75 ? 41 83 FF ? 75 ? 41 8B 44 24
+add_column|UnkBool66_1|byte                   // ref: 80 B8 ? ? ? ? ? 74 ? 8B 87 ? ? ? ? 83 F8
 add_column|Unk66_2|byte
-
 add_column|CantStaggerTarget|byte
-
-// ref: 40 38 B8 ? ? ? ? 75 ? 8B 46
-add_column|UnkBool66_4|byte
-
+add_column|UnkBool66_4|byte                   // ref: 40 38 B8 ? ? ? ? 75 ? 8B 46
 add_column|Unk67_1|byte
 add_column|Unk67_2|byte
-
-// ref: 80 B8 ? ? ? ? ? 74 ? 80 BE ? ? ? ? ? 75
-add_column|UnkBool67_3|byte
-
-// ref: 80 B8 ? ? ? ? ? 0F 85 ? ? ? ? 45 8B 06
-add_column|UnkBool67_4|byte
-
-// ref: 80 B8 ? ? ? ? ? 75 ? C7 43
-add_column|UnkBool68_1|byte
-
-// ref: 80 B8 ? ? ? ? ? 0F 85 ? ? ? ? 48 8B 0D ? ? ? ? 48 8D 55
-// ref2: 44 38 B0 ? ? ? ? 74 ? 32 C0
-add_column|UnkBool68_2|byte
-
-// ref: 44 38 B8 ? ? ? ? 75 ? 48 8D 4C 24
-// ref2: 44 38 A0 ? ? ? ? 0F 85 ? ? ? ? 48 8D 4C 24
-add_column|UnkBool68_3|byte
-
-// ref: 44 38 B8 ? ? ? ? 0F 85 ? ? ? ? 4D 85 C0 74
-// ref2: 38 98 ? ? ? ? 0F 85 ? ? ? ? 4D 85 C0
-add_column|UnkBool68_4|byte
-
+add_column|UnkBool67_3|byte                   // ref: 80 B8 ? ? ? ? ? 74 ? 80 BE ? ? ? ? ? 75
+add_column|UnkBool67_4|byte                   // ref: 80 B8 ? ? ? ? ? 0F 85 ? ? ? ? 45 8B 06
+add_column|UnkBool68_1|byte                   // ref: 80 B8 ? ? ? ? ? 75 ? C7 43
+add_column|UnkBool68_2|byte                   // ref: 80 B8 ? ? ? ? ? 0F 85 ? ? ? ? 48 8B 0D ? ? ? ? 48 8D 55, ref2: 44 38 B0 ? ? ? ? 74 ? 32 C0
+add_column|UnkBool68_3|byte                   // ref: 44 38 B8 ? ? ? ? 75 ? 48 8D 4C 24, ref2: 44 38 A0 ? ? ? ? 0F 85 ? ? ? ? 48 8D 4C 24
+add_column|UnkBool68_4|byte                   // ref: 44 38 B8 ? ? ? ? 0F 85 ? ? ? ? 4D 85 C0 74, ref2: 38 98 ? ? ? ? 0F 85 ? ? ? ? 4D 85 C0
 add_column|Unk69_1|byte
 add_column|Unk69_2|byte
-
-// ref: 80 B8 ? ? ? ? ? 0F 84 ? ? ? ? 49 8B 43
-add_column|UnkBool69_3|byte
-
+add_column|UnkBool69_3|byte                   // ref: 80 B8 ? ? ? ? ? 0F 84 ? ? ? ? 49 8B 43
 add_column|Unk69_4|byte
-
-// ref: 8A 80 ? ? ? ? F6 D8 45 1B F6
-add_column|UnkBool70_1|byte
-
-// ref: 8A 80 ? ? ? ? 88 44 24 ? 48 89 74 24
-add_column|Unk70_2|byte
-
+add_column|UnkBool70_1|byte                   // ref: 8A 80 ? ? ? ? F6 D8 45 1B F6
+add_column|Unk70_2|byte                       // ref: 8A 80 ? ? ? ? 88 44 24 ? 48 89 74 24
 add_column|Unk70_3|byte
 add_column|Unk70_4|byte
 add_column|Unk71|int
 add_column|Unk72|float
 add_column|Unk73_1|byte
-
-// is capped to 999999?
-// ref: 45 38 A6 ? ? ? ? B8
-add_column|UnkBool73_2|byte
-
+add_column|UnkBool73_2|byte                   // is capped to 999999? - ref: 45 38 A6 ? ? ? ? B8
 add_column|Unk73_3|byte
 add_column|Unk73_4|byte
 add_column|Unk74|int
 add_column|Unk75|int
-
-// abysseffect related?
-// ref: 40 38 A8 ? ? ? ? 74 ? 45 33 C9 49 8D 92 ? ? ? ? 49 8B CA 45 8D 41 ? E8 ? ? ? ? 4D 8B 07 8B C8 4C 8B 15 ? ? ? ? B8 ? ? ? ? 0F AF CE
-add_column|UnkBool76_1|byte
-
-// abysseffect related?
-// ref: 40 38 A8 ? ? ? ? 74 ? 45 33 C9 49 8D 92 ? ? ? ? 49 8B CA 45 8D 41 ? E8 ? ? ? ? 8B C8
-add_column|UnkBool76_2|byte
-
+add_column|UnkBool76_1|byte                   // AbyssEffect related? - ref: 40 38 A8 ? ? ? ? 74 ? 45 33 C9 49 8D 92 ? ? ? ? 49 8B CA 45 8D 41 ? E8 ? ? ? ? 4D 8B 07 8B C8 4C 8B 15 ? ? ? ? B8 ? ? ? ? 0F AF CE
+add_column|UnkBool76_2|byte                   // AbyssEffect related? - ref: 40 38 A8 ? ? ? ? 74 ? 45 33 C9 49 8D 92 ? ? ? ? 49 8B CA 45 8D 41 ? E8 ? ? ? ? 8B C8
 add_column|Unk76_3|byte
-
-// ref: 80 B8 ? ? ? ? ? 8B 0F
-add_column|UnkBool76_4|byte
+add_column|UnkBool76_4|byte                   // ref: 80 B8 ? ? ? ? ? 8B 0F
 
 //////////////////////////////////////////////////////
 // Comments

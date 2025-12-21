@@ -13,11 +13,7 @@ use_base_row_id|true
 
 add_column|DLCFlags|int
 add_column|Comment|string
-
-// Checked against hardcoded numbers/switch table - 0-12
-// ref: 8B 40 ? 83 F8 ? 77 ? 74 ? 83 E8 ? 74 ? 83 E8 ? 74 ? 83 E8 ? 74 ? 83 E8 ? 74 ? 83 F8
-// ref2: 44 8B 70 ? 33 FF
-add_column|SkillCategoryId|int
+add_column|SkillCategoryId|int  // Checked against hardcoded numbers/switch table - 0-12 - ref: 8B 40 ? 83 F8 ? 77 ? 74 ? 83 E8 ? 74 ? 83 E8 ? 74 ? 83 E8 ? 74 ? 83 E8 ? 74 ? 83 F8, ref2: 44 8B 70 ? 33 FF
 
 // Note: usersituation 992013 is checked first
 add_column|ReqSkillIdUnlock1|int
@@ -43,29 +39,15 @@ add_column|UpgradeCost|int
 add_column|IconTexFileId|int
 add_column|ThumbnailTexFileId|int
 add_column|MovieDataId|int
-
-// Hardcoded checks against numbers like 6
-// ref: 39 58 ? 74 ? 4D 85 C0 74 ? 49 39 18 7C ? 49 8B C8 E8 ? ? ? ? 48 8B D8 EB ? 48 8D 1D
-add_column|Unk16|int
-
-// But also checked against hardcoded numbers (for text color)
-add_column|SkillUiCategoryId|int
-
+add_column|Unk16|int                                 // Hardcoded checks against numbers like 6 - ref: 39 58 ? 74 ? 4D 85 C0 74 ? 49 39 18 7C ? 49 8B C8 E8 ? ? ? ? 48 8B D8 EB ? 48 8D 1D
+add_column|SkillUiCategoryId|int                     // But also checked against hardcoded numbers (for text color)
 add_column|Unk18|int
-
-// No more than 66
-add_column|RecommendAcquireOrder|int
+add_column|RecommendAcquireOrder|int                 // No more than 66
 add_column|AttackHalfStars|byte
 add_column|StaggerHalfStars|byte
-
-// ref: 38 48 ? 41 8B C1
-add_column|MinimumResetLevel|byte
-
+add_column|MinimumResetLevel|byte                    // ref: 38 48 ? 41 8B C1
 add_column|AvailableToOtherEikonsOnMaster|byte
-
-// Same as RefundPointsOnReset, but depends on current partymember row, specifically Unk9
-// used by partymember flag at 0x35 (UnkSkillRelatedBool?)
-add_column|RefundPointsOnReset1|byte
+add_column|RefundPointsOnReset1|byte                 // Same as RefundPointsOnReset, but depends on current PartyMember row, specifically Unk9 -used by partymember flag at 0x35 (UnkSkillRelatedBool?)
 add_column|RefundPointsOnReset2|byte
 add_column|Unk26|byte
 add_column|Unk27|byte
