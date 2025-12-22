@@ -7,6 +7,7 @@ use_base_row_id|false
 // 41, 49, 50, 51, 53, 58, 72, 73, 74, 75, 76, 77, 79, 80, 81, 83, 109, 110, 112, 114
 // Check: ffxvi.exe 1.0.1 steam
 // 48 89 5C 24 ? 48 89 74 24 ? 48 89 7C 24 ? 55 41 56 41 57 48 8B EC 48 83 EC ? 48 8B 05 ? ? ? ? 33 F6
+/////////////////////////////////////////
 
 add_column|DLCFlags|int
 add_column|PlayerCommandBuilderId|int        // Seems to be used like a type. hardcoded checks. ref: 48 8B C4 48 89 58 ? 48 89 70 ? 48 89 78 ? 4C 89 40 ? 55 48 8B EC 48 83 EC
@@ -74,3 +75,11 @@ add_column|Unk59|byte
 add_column|Unk60|byte
 add_column|Unk61|byte
 add_column|Unk62|byte
+
+/////////////////////////////////////////
+set_comment|49|||Clive's Ifrit LB
+set_comment|72|||Odin Arm of Darkness
+set_comment|74|||Ramuh Blind Justice
+set_comment|75|||Bahamut Wings of Light
+set_comment|76|||Serpent's Cry
+set_comment|82|||Ultima's Ascend
