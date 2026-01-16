@@ -32,7 +32,7 @@ add_column|UnkActionFollowupIndex|byte            // action table, index into Fo
 add_column|Unk21|byte
 add_column|Unk22|byte
 add_column|UseDoonMashingType|byte                // ref: 44 38 70 ? 74 ? 48 85 DB 75 ? 49 8B C6 - uses doonmashingtype+0x55
-add_column|UnkLevel|byte                          // 5 added to this if rising tide dlc is unlocked, OR 10 added to this if echoes dlc is unlocked - ref: 48 89 5C 24 ? 57 48 83 EC ? E8 ? ? ? ? 8B F8 33 DB 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D ? ? ? ? 48 85 C9 74 ? BA ? ? ? ? E8 ? ? ? ? 48 89 05 ? ? ? ? 48 85 C0 74 ? 8B D7 48 8B C8 E8 ? ? ? ? 48 85 C0 74 ? 48 39 18 7C ? 48 8B C8 E8 ? ? ? ? 48 8B D8 EB ? 48 8D 1D ? ? ? ? 0F B6 5B
+add_column|CliveLevelCap|byte                     // ParamGrow id. 5 added to this if rising tide dlc is unlocked, OR 10 added to this if echoes dlc is unlocked - ref: 48 89 5C 24 ? 57 48 83 EC ? E8 ? ? ? ? 8B F8 33 DB 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D ? ? ? ? 48 85 C9 74 ? BA ? ? ? ? E8 ? ? ? ? 48 89 05 ? ? ? ? 48 85 C0 74 ? 8B D7 48 8B C8 E8 ? ? ? ? 48 85 C0 74 ? 48 39 18 7C ? 48 8B C8 E8 ? ? ? ? 48 8B D8 EB ? 48 8D 1D ? ? ? ? 0F B6 5B
 add_column|UnkBool25|byte                         // ref: 45 38 77 ? 0F 84 ? ? ? ? 4C 89 75
 add_column|Unk26|byte
 add_column|OutgoingDamagePercent|byte             // ref: 0F B6 48 ? BF
