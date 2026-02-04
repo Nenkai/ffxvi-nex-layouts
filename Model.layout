@@ -42,7 +42,7 @@ add_column|Unk35|int
 add_column|UnkType36|int                        // ref: 41 8B 88 ? ? ? ? 83 E9 ? 74 ? 83 F9 ? 75 ? 0F BA 6D
 add_column|Unk37|int
 add_column|Unk38|byte
-add_column|Unk39|byte
+add_column|Unk39|byte                           // ref: 8A 98 ? ? ? ? 88 9E
 add_column|Unk40|byte
 add_column|Unk41|byte
 add_column|FootWetnessId|byte
