@@ -35,7 +35,8 @@ add_column|Unk27_4|byte
 add_column|Unk28|float
 add_column|SpeakerId|int
 add_column|Unk30|int
-add_column|Unk31|int
+add_column|StaggerMultiplier|ushort     // Value in ParamGrow * This
+// <implicit 2 byte padding>
 add_column|Unk32|float
 add_column|Unk33|int
 add_column|Unk34|int
