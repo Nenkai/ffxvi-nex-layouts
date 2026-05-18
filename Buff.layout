@@ -13,13 +13,13 @@ use_base_row_id|false
 add_column|DLCFlags|int
 add_column|Comment|string
 add_column|Duration|float
-add_column|Unk4|int
+add_column|Unk4|int                              // ref: 03 68 ? 48 85 FF
 add_column|BuffPercent|int
 add_column|UnkSpeedMovement|float
 // VFXAudioId = .vatb file entry
 add_column|VFXAudioId|int
 add_column|Unk8|float
-add_column|Unk9|int
+add_column|UnkBNpcBaseId|int                     // ref: 39 47 ?? 74 ?? 48 85 DB, ref 2: 83 78 ? ? 0F 84 ? ? ? ? 48 8B 0D ? ? ? ? 48 8D 54 24 ? 45 8B C4
 add_column|Unk10|byte
 add_column|UnkDefense|byte
 add_column|Unk12|byte
