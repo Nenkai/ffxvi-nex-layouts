@@ -24,7 +24,7 @@ add_column|InitAbilityId|int        // ref: 8B 78 ?? 48 8B 05 ?? ?? ?? ?? 48 85 
 add_column|Unk19|int
 add_column|MonStatIdDefault|int
 add_column|MonStatIds|int[]
-add_column|Unk23|int
+add_column|Unk23|int                // ref: 41 83 78 ?? ?? 75 ?? 45 33 C0
 add_column|Unk24|int
 add_column|PartParamSetId|int
 add_column|Unk26|int
