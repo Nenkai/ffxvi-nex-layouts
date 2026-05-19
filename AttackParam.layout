@@ -21,8 +21,8 @@ add_column|UnkType15|int                       // ref: 8B 50 ? 41 B8 ? ? ? ? 48 
 add_column|Unk16|int[]
 add_column|Unk17|int
 add_column|Unk18|int
-add_column|Unk19|int
-add_column|Unk20|float
+add_column|HitstopFrames|uint                  // ref: 8B 40 ? C5 F8 57 C0 C4 E1 FA 2A C0 C5 FA 5E 35
+add_column|HitstopSlowdownFactor|float         // ref: C5 FA 10 58 ?? C5 F8 28 D6 33 D2
 add_column|DamageReactionId|int                // ref: 44 8B 78 ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 1D
 add_column|Unk22|int
 add_column|Unk23|int
