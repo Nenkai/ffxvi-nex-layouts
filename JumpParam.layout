@@ -4,12 +4,12 @@ set_table_category|SingleKeyed
 use_base_row_id|true
 
 add_column|DLCFlags|int
-add_column|Height|float        // ref (rva 1.03): +0x4b1db3
-add_column|Unk3|float          // ref (rva 1.03): +0x4b202b
-add_column|DurationSec|float   // ref (rva 1.03): +0x4b1eef
-add_column|Unk5|float          // ref (rva 1.03): +0x4b2167
-add_column|Unk6|float          // ref: C5 FA 10 47 ? 48 8B 5C 24, ref2: C5 FA 10 46 ? C5 FA 11 45 ? C5 F8 57 C0, ref3: C5 FA 10 46 ? 8B 4F
-add_column|Unk7|float          // ref: C5 FA 10 47 ? EB ? 48 85 DB 74 ? 48 39 3B 7C ? 48 8B CB E8 ? ? ? ? 48 8B F8 EB ? 49 8B FE, ref2: C5 FA 10 46 ? EB ? 45 33 FF, ref3: C5 FA 10 46 ? EB ? 48 85 DB
-add_column|Unk8|float          // ref: C5 FA 10 47 ? EB ? 48 8D 4D, ref2: C5 FA 10 46 ? EB ? 49 8D 4E, ref3: C5 FA 10 46 ? EB ? 48 8D 4F
-add_column|Unk9|float          // ref: C5 FA 10 43 ? 48 8B 5C 24 ? 48 83 C4 ? 5F C3 CC 48 8D 05
+add_column|Height|float                     // height (Y) to gain on jumping - ref (rva 1.03): +0x4b1db3
+add_column|DelaySec|float                   // delay in seconds before the character actually gains height - ref (rva 1.03): +0x4b202b
+add_column|AscendDurationSec|float          // how long the ascend takes in seconds - ref (rva 1.03): +0x4b1eef
+add_column|ApexDurationSec|float            // how long the character stays in the air after reaching apex height - ref (rva 1.03): +0x4b2167
+add_column|IdleForwardDistance|float        // controls how much the character will travel while jumping while idle - ref: C5 FA 10 47 ? 48 8B 5C 24, ref2: C5 FA 10 46 ? C5 FA 11 45 ? C5 F8 57 C0, ref3: C5 FA 10 46 ? 8B 4F
+add_column|RunForwardDistance|float         // controls how much the character will travel while jumping while running - ref: C5 FA 10 47 ? EB ? 48 85 DB 74 ? 48 39 3B 7C ? 48 8B CB E8 ? ? ? ? 48 8B F8 EB ? 49 8B FE, ref2: C5 FA 10 46 ? EB ? 45 33 FF, ref3: C5 FA 10 46 ? EB ? 48 85 DB
+add_column|Unk8|float                       // ref: C5 FA 10 47 ? EB ? 48 8D 4D, ref2: C5 FA 10 46 ? EB ? 49 8D 4E, ref3: C5 FA 10 46 ? EB ? 48 8D 4F
+add_column|AirborneInputMoveSpeed|float     // controls how fast the character moves in the air, while moving while airborne - ref: C5 FA 10 43 ? 48 8B 5C 24 ? 48 83 C4 ? 5F C3 CC 48 8D 05
 add_column|Comment|string
