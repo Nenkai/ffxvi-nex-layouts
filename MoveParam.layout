@@ -40,16 +40,16 @@ add_column|Unk36|float
 add_column|Unk37|float
 add_column|Unk38|float
 add_column|Unk39|float
-add_column|Unk41|int
-add_column|Unk42|int
-add_column|Unk43|int
+add_column|MoveParamId_Type1|int    // rva - 1.03 - +0x4b1f00 - we use rvas here because the signature is way too long.
+add_column|MoveParamId_Type2|int    // rva - 1.03 - +0x4b1f00
+add_column|MoveParamId_Type0|int    // rva - 1.03 - +0x4b1f00
 add_column|Unk44|int
 add_column|UnkSpeed2|float
 add_column|StartSpeed2|float
 add_column|RunSpeed2|float
 add_column|SprintSpeed2|float
 add_column|Unk49|int
-add_column|Unk51|int
+add_column|MoveParamId_Unk|int     // rva - 1.03 - +0x4b1f00
 add_column|Unk52|float
 add_column|Unk53|float
 add_column|Unk54|float
