@@ -17,3 +17,21 @@ add_column|WorldMapAnchorId|int       // Has an hardcoded check on 11
 add_column|ReqUserSituationId|int
 add_column|ThumbnailTexFileId|int
 add_column|PanelImageTexFileId|int
+
+set_comment|1|||The Greatwood
+set_comment|2|||Caer Norvent
+set_comment|3|||The Eye of the Tempest
+set_comment|4|||The Kingsfall
+set_comment|5|||Phoenix Gate Ruins
+set_comment|6|||Drake's Head
+set_comment|7|||Kostnice
+set_comment|8|||Drake's Breath
+set_comment|9|||Rosalith
+set_comment|10|||Drake's Fang
+set_comment|11|||The Crystalline Dominion
+set_comment|12|||The Free Cities of Kanver
+set_comment|13|||The Ironworks
+set_comment|14|||The Naldia Narrow
+set_comment|15|||Reverie
+set_comment|16|||Drake's Spine
+set_comment|17|||Origin

@@ -4,16 +4,70 @@ set_table_category|DoubleKeyed
 use_base_row_id|false
 
 add_column|DLCFlags|int
-add_column|Unk2|int
-add_column|Unk3|int
-add_column|Unk4|int
+add_column|Comment|string
+add_column|Sword|int
+add_column|Belt|int
+add_column|Vambracer|int
 add_column|Unk5|int
 add_column|Unk6|int
 add_column|Unk7|int
-add_column|Unk8|int
-add_column|Unk9|int
-add_column|Unk10|int
-add_column|Unk11|int
-add_column|Unk12|int
-add_column|Unk13|int
-add_column|Unk14|int
+add_column|Potion|int
+add_column|High Potion|int
+add_column|Elixer|int
+add_column|Strength Tonic|int
+add_column|Stoneskin Tonic|int
+add_column|Lionheart Tonic|int
+add_column|Player Level|int
+
+set_comment|1|||The Greatwood - Action Focused Mode
+set_comment|2|||The Greatwood - Final Fantasy Mode
+set_comment|3|||The Greatwood - Ultimaniac Mode
+set_comment|4|||Caer Norvent - Action Focused Mode
+set_comment|5|||Caer Norvent - Final Fantasy Mode
+set_comment|6|||Caer Norvent - Ultimaniac Mode
+set_comment|7|||The Eye of the Tempest - Action Focused Mode
+set_comment|8|||The Eye of the Tempest - Final Fantasy Mode
+set_comment|9|||The Eye of the Tempest - Ultimaniac Mode
+set_comment|10|||The Kingsfall - Action Focused Mode
+set_comment|11|||The Kingsfall - Final Fantasy Mode
+set_comment|12|||The Kingsfall - Ultimaniac Mode
+set_comment|13|||Phoenix Gate Ruins - Action Focused Mode
+set_comment|14|||Phoenix Gate Ruins - Final Fantasy Mode
+set_comment|15|||Phoenix Gate Ruins - Ultimaniac Mode
+set_comment|16|||Drake's Head - Action Focused Mode
+set_comment|17|||Drake's Head - Final Fantasy Mode
+set_comment|18|||Drake's Head - Ultimaniac Mode
+set_comment|19|||Kostnice - Action Focused Mode
+set_comment|20|||Kostnice - Final Fantasy Mode
+set_comment|21|||Kostnice - Ultimaniac Mode
+set_comment|22|||Drake's Breath - Action Focused Mode
+set_comment|23|||Drake's Breath - Final Fantasy Mode
+set_comment|24|||Drake's Breath - Ultimaniac Mode
+set_comment|25|||Rosalith - Action Focused Mode
+set_comment|26|||Rosalith - Final Fantasy Mode
+set_comment|27|||Rosalith - Ultimaniac Mode
+set_comment|28|||Drake's Fang - Action Focused Mode
+set_comment|29|||Drake's Fang - Final Fantasy Mode
+set_comment|30|||Drake's Fang - Ultimaniac Mode
+set_comment|31|||The Crystalline Dominion - Action Focused Mode
+set_comment|32|||The Crystalline Dominion - Final Fantasy Mode
+set_comment|33|||The Crystalline Dominion - Ultimaniac Mode
+set_comment|34|||Thee Free Cities of Kanver - Action Focused Mode
+set_comment|35|||Thee Free Cities of Kanver - Final Fantasy Mode
+set_comment|36|||Thee Free Cities of Kanver - Ultimaniac Mode
+set_comment|37|||The Ironworks - Action Focused Mode
+set_comment|38|||The Ironworks - Final Fantasy Mode
+set_comment|39|||The Ironworks - Ultimaniac Mode
+set_comment|40|||The Naldia Narrow - Action Focused Mode
+set_comment|41|||The Naldia Narrow - Final Fantasy Mode
+set_comment|42|||The Naldia Narrow - Ultimaniac Mode
+set_comment|43|||Reverie - Action Focused Mode
+set_comment|44|||Reverie - Final Fantasy Mode
+set_comment|45|||Reverie - Ultimaniac Mode
+set_comment|46|||Drake's Spine - Action Focused Mode
+set_comment|47|||Drake's Spine - Final Fantasy Mode
+set_comment|48|||Drake's Spine - Ultimaniac Mode
+set_comment|49|||Origin - Action Focused Mode
+set_comment|50|||Origin - Final Fantasy Mode
+set_comment|51|||Origin - Ultimaniac Mode
+
