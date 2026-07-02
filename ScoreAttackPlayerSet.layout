@@ -17,4 +17,4 @@ add_column|Elixer|int
 add_column|Strength Tonic|int
 add_column|Stoneskin Tonic|int
 add_column|Lionheart Tonic|int
-add_column|Unk14|int
+add_column|Player Level|int
