@@ -4,4 +4,4 @@ set_table_category|DoubleKeyed
 use_base_row_id|false
 
 add_column|Unk1|int
-add_column|Unk2|int
+add_column|LayoutNamedInstanceId|Int
