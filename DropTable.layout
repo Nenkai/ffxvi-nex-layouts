@@ -30,3 +30,5 @@ add_column|Chance4|byte
 add_column|Chance5|byte
 add_column|Chance6|byte
 <implciit 2 bytes padding>
+
+set_comment|2061|||Letting Off Steam III - Final Fantasy Mode
