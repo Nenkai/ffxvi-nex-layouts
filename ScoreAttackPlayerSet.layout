@@ -12,7 +12,7 @@ add_column|Unk5|int
 add_column|Unk6|int
 add_column|Unk7|int
 add_column|Potion|int
-add_column|Unk9|int
+add_column|High Potion|int
 add_column|Unk10|int
 add_column|Unk11|int
 add_column|Unk12|int
