@@ -20,7 +20,7 @@ add_column|BattleAiId|int
 add_column|PlayerModeId|int
 add_column|MoveTypeId|int
 add_column|Unk17|int
-add_column|Unk18|int
+add_column|InitAbilityId|int        // ref: 8B 78 ?? 48 8B 05 ?? ?? ?? ?? 48 85 C0 75 ?? 48 85 ED 74 ?? BA ?? ?? ?? ?? 48 8B CD E8 ?? ?? ?? ?? 48 89 05 ?? ?? ?? ?? 44 8B C7
 add_column|Unk19|int
 add_column|MonStatIdDefault|int
 add_column|MonStatIds|int[]
@@ -35,7 +35,8 @@ add_column|Unk27_4|byte
 add_column|Unk28|float
 add_column|SpeakerId|int
 add_column|Unk30|int
-add_column|Unk31|int
+add_column|StaggerMultiplier|ushort     // Value in ParamGrow * This
+// <implicit 2 byte padding>
 add_column|Unk32|float
 add_column|Unk33|int
 add_column|Unk34|int

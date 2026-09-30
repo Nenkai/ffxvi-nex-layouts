@@ -3,24 +3,23 @@ set_table_type|SingleKeyed
 set_table_category|SingleKeyed
 use_base_row_id|true
 
-// This layout was generated, guessed row length: 0x50
 add_column|DLCFlags|int
 add_column|XP|int
 add_column|HP|int
-add_column|Unk4|int
+add_column|UnkBase4_BNpcBaseType2|int                // ref: 48 83 EC ?? 4C 8B 49 ?? 4C 8D 1D ?? ?? ?? ?? 45 33 C0 4C 8B D1 4D 85 C9 75 ?? 41 8B D0
 add_column|Unk5|int
-add_column|Unk6|int
+add_column|UnkBase6_BNpcBaseType3|int                // ref: 48 83 EC ?? 4C 8B 49 ?? 4C 8D 1D ?? ?? ?? ?? 45 33 C0 4C 8B D1 4D 85 C9 75 ?? 41 8B D0
 add_column|Unk7|int
-add_column|Unk8|int
-add_column|Unk9|int
-add_column|Strength|int
-add_column|Vitality|int
-add_column|Unk12|int
-add_column|Unk13|int
-add_column|Unk14|int
+add_column|UnkBase8_BNpcBaseType1_4_5|int            // ref: 48 83 EC ?? 4C 8B 49 ?? 4C 8D 1D ?? ?? ?? ?? 45 33 C0 4C 8B D1 4D 85 C9 75 ?? 41 8B D0
+add_column|UnkMultiplier|int
+add_column|Strength_BNpcBaseType1_6_9|int            // Note: If BNpcBase->Unk23 = 2, extra strength from equipment is added - ref: 40 53 48 83 EC ?? 4C 8B 51 ?? 4C 8D 1D
+add_column|Vitality_BNpcBaseType1_6_9|uint           // Only if BNpcBase Type is 1, 6 or 9
+add_column|Strength_BNpcBaseType4_5_8|int            // ref: 40 53 48 83 EC ?? 4C 8B 51 ?? 4C 8D 1D
+add_column|Strength_BNpcBaseType3|int                // ref: 40 53 48 83 EC ?? 4C 8B 51 ?? 4C 8D 1D
+add_column|Strength_BNpcBaseType2|int                // ref: 40 53 48 83 EC ?? 4C 8B 51 ?? 4C 8D 1D
 add_column|Will|int
-add_column|Unk16|int
-add_column|Unk17|int
-add_column|Unk18|int
+add_column|Stagger_BNpcBaseType3|int                 // This * BNpcBase->StaggerMult - ref: 48 8B C4 48 89 58 ?? 48 89 68 ?? 48 89 70 ?? 48 89 78 ?? 41 54 41 56 41 57 48 83 EC ?? 4C 8B 41 ?? 48 8D 35
+add_column|Stagger_BNpcBaseType2|int                 // This * BNpcBase->StaggerMult - ref: 48 8B C4 48 89 58 ?? 48 89 68 ?? 48 89 70 ?? 48 89 78 ?? 41 54 41 56 41 57 48 83 EC ?? 4C 8B 41 ?? 48 8D 35
+add_column|Stagger_BNpcBaseType4_5_8|int             // This * BNpcBase->StaggerMult - ref: 48 8B C4 48 89 58 ?? 48 89 68 ?? 48 89 70 ?? 48 89 78 ?? 41 54 41 56 41 57 48 83 EC ?? 4C 8B 41 ?? 48 8D 35
 add_column|Unk19|int
 add_column|Unk20|int
