@@ -4,14 +4,14 @@ set_table_category|DoubleKeyed
 use_base_row_id|false
 
 add_column|DLCFlags|int
-add_column|Unk2|int
+add_column|DamageReactionReplacementId|int  // ref: 8B 58 ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D ? ? ? ? 48 85 C9 74 ? BA ? ? ? ? E8 ? ? ? ? 45 33 DB 48 89 05 ? ? ? ? 48 85 C0 74 ? 45 8B C7
 add_column|Unk3|int
 add_column|Unk4|float
 add_column|Unk5|byte
 add_column|Unk6|byte
 add_column|Unk7|byte
 add_column|Unk8|byte
-add_column|Unk9|byte
+add_column|EnemyStateCondition|byte         // ref: 0 = Normal, 1 = Airborne, 2 = Downed
 add_column|Unk10|byte
 add_column|Unk11|byte
 add_column|Unk12|byte

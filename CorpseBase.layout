@@ -3,10 +3,14 @@ set_table_type|SingleKeyed
 set_table_category|SingleKeyed
 use_base_row_id|false
 
+// The number of max corpses in performance mode is dictated by PerformanceModeSettingParam, 
+// otherwise it's hardcoded to 20. (ref 1: C7 41 ? ? ? ? ? B0 ? C3 CC, ref 2: B8 ? ? ? ? 41 89 47)
+// An additional setting is present in MapSettings.
+
 add_column|DLCFlags|int
-add_column|Unk2|int
-add_column|Unk3|int
-add_column|Unk4|int
+add_column|Type|int            // 0-1-3, ref: 39 78 ? 75 ? 48 8B 01
+add_column|CorpseStayId|int    // ref: 44 8B 78 ? 33 DB 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D
+add_column|Unk4|int            // ref: 8B 40 ? 89 47 ? 49 83 38 ? 7C ? 49 8B C8 E8 ? ? ? ? EB ? 48 8D 05     
 add_column|Unk5|float
 add_column|Unk6|float
-add_column|Unk7|float
+add_column|Unk7|float          // ref: 41 8B 46 ? 48 8D 55 ? 44 8B 46

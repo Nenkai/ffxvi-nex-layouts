@@ -3,6 +3,11 @@ set_table_type|SingleKeyed
 set_table_category|SingleKeyed
 use_base_row_id|true
 
+// Some damage reaction ids are hardcoded to certain hardcoded classes in 48 89 5C 24 ? 48 89 6C 24 ? 48 89 74 24 ? 57 41 56 41 57 48 83 EC ? 41 8B B0
+// ^ Ids: 12, 17, 18, 30, 52
+
+// Also, strange check (damageReactionId < 31) at: 41 83 FF ? 0F 83 ? ? ? ? 4D 85 C0
+
 // Example Mappings
 // | DamageReaction.Key | SystemMoveId | Description        |
 // |--------------------|--------------|--------------------|

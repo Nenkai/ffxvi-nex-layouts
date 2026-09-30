@@ -5,10 +5,10 @@ use_base_row_id|true
 
 // This layout was generated, guessed row length: 0x20
 add_column|DLCFlags|int
+add_column|VFXAudioId1|int
+add_column|VFXAudioId2|int
+add_column|VFXAudioId3|int
+add_column|Unk1|int
 add_column|Unk2|int
 add_column|Unk3|int
-add_column|Unk4|int
-add_column|Unk5|int
-add_column|Unk6|int
-add_column|Unk7|int
-add_column|Unk8|int
+add_column|UnkItemUnion|union16

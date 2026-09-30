@@ -4,16 +4,71 @@ set_table_category|DoubleKeyed
 use_base_row_id|false
 
 add_column|DLCFlags|int
-add_column|Unk2|int
-add_column|Unk3|int
-add_column|Unk4|int
+add_column|SwordEquipItemId|int
+add_column|BeltEquipItemId|int
+add_column|VambracerEquipItemId|int
 add_column|Unk5|int
 add_column|Unk6|int
 add_column|Unk7|int
-add_column|Unk8|int
-add_column|Unk9|int
-add_column|Unk10|int
-add_column|Unk11|int
-add_column|Unk12|int
-add_column|Unk13|int
-add_column|Unk14|int
+add_column|PotionSAPlayerSetIndex|int
+add_column|HighPotionSAPlayerSetIndex|int
+add_column|ElixerSAPlayerSetIndex|int
+add_column|StrengthTonicSAPlayerSetIndex|int
+add_column|StoneskinTonicSAPlayerSetIndex|int
+add_column|LionheartTonicSAPlayerSetIndex|int
+add_column|PlayerLevel|int
+
+//////////////////////////////////////////////////
+// IDS:
+//////////////////////////////////////////////////
+// 1 - The Greatwood - Action Focused Mode
+// 2 - The Greatwood - Final Fantasy Mode
+// 3 - The Greatwood - Ultimaniac Mode
+// 4 - Caer Norvent - Action Focused Mode
+// 5 - Caer Norvent - Final Fantasy Mode
+// 6 - Caer Norvent - Ultimaniac Mode
+// 7 - The Eye of the Tempest - Action Focused Mode
+// 8 - The Eye of the Tempest - Final Fantasy Mode
+// 9 - The Eye of the Tempest - Ultimaniac Mode
+// 10 - The Kingsfall - Action Focused Mode
+// 11 - The Kingsfall - Final Fantasy Mode
+// 12 - The Kingsfall - Ultimaniac Mode
+// 13 - Phoenix Gate Ruins - Action Focused Mode
+// 14 - Phoenix Gate Ruins - Final Fantasy Mode
+// 15 - Phoenix Gate Ruins - Ultimaniac Mode
+// 16 - Drake's Head - Action Focused Mode
+// 17 - Drake's Head - Final Fantasy Mode
+// 18 - Drake's Head - Ultimaniac Mode
+// 19 - Kostnice - Action Focused Mode
+// 20 - Kostnice - Final Fantasy Mode
+// 21 - Kostnice - Ultimaniac Mode
+// 22 - Drake's Breath - Action Focused Mode
+// 23 - Drake's Breath - Final Fantasy Mode
+// 24 - Drake's Breath - Ultimaniac Mode
+// 25 - Rosalith - Action Focused Mode
+// 26 - Rosalith - Final Fantasy Mode
+// 27 - Rosalith - Ultimaniac Mode
+// 28 - Drake's Fang - Action Focused Mode
+// 29 - Drake's Fang - Final Fantasy Mode
+// 30 - Drake's Fang - Ultimaniac Mode
+// 31 - The Crystalline Dominion - Action Focused Mode
+// 32 - The Crystalline Dominion - Final Fantasy Mode
+// 33 - The Crystalline Dominion - Ultimaniac Mode
+// 34 - Thee Free Cities of Kanver - Action Focused Mode
+// 35 - Thee Free Cities of Kanver - Final Fantasy Mode
+// 36 - Thee Free Cities of Kanver - Ultimaniac Mode
+// 37 - The Ironworks - Action Focused Mode
+// 38 - The Ironworks - Final Fantasy Mode
+// 39 - The Ironworks - Ultimaniac Mode
+// 40 - The Naldia Narrow - Action Focused Mode
+// 41 - The Naldia Narrow - Final Fantasy Mode
+// 42 - The Naldia Narrow - Ultimaniac Mode
+// 43 - Reverie - Action Focused Mode
+// 44 - Reverie - Final Fantasy Mode
+// 45 - Reverie - Ultimaniac Mode
+// 46 - Drake's Spine - Action Focused Mode
+// 47 - Drake's Spine - Final Fantasy Mode
+// 48 - Drake's Spine - Ultimaniac Mode
+// 49 - Origin - Action Focused Mode
+// 50 - Origin - Final Fantasy Mode
+// 51 - Origin - Ultimaniac Mode

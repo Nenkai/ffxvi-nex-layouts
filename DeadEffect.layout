@@ -29,5 +29,5 @@ add_column|Unk23|float
 add_column|Unk24|int
 add_column|Unk25|float
 add_column|Unk26|float
-add_column|Unk27|int
+add_column|CorpseBaseId|int   // Note: if not present, uses BNpcBase->CorpseBaseId. Overrides ref: 8B 73 ? 48 8B 0D ? ? ? ? 48 8D 54 24
 add_column|Unk28|int

@@ -3,18 +3,32 @@ set_table_type|SingleKeyed
 set_table_category|SingleKeyed
 use_base_row_id|false
 
-// Has some hardcoded checks on some ids
-// 48 8B C4 48 89 58 ? 48 89 70 ? 48 89 78 ? 4C 89 70 ? 55 48 8B EC 48 83 EC ? 83 65
+///////////////////////////////////////
+// Various transition ids are hardcoded.
+// Data fetcher: 48 8B C4 48 89 58 ? 48 89 70 ? 48 89 78 ? 4C 89 70 ? 55 48 8B EC 48 83 EC ? 83 65
+///////////////////////////////////////
 
 add_column|DLCFlags|int
-add_column|Unk2|int
-add_column|Unk3|float
-add_column|Unk4|int
-add_column|Unk5|float
-add_column|Unk6|int
+
+// 0 = None
+// 1 = Fade to Black (No UI)
+// 2 = Fade to White (No UI)
+// 3 = Fade to Black (UI)
+// 4 = Fade to White (UI)
+add_column|FadeType|int
+add_column|FadeDurationSec|float
+
+// 0 = Immediate
+// 3 = Fade to mute
+add_column|SoundFadeType|int
+
+add_column|UnfadeDurationSec|float
+
+// 0-5
+add_column|UnkType6|int
 add_column|Unk7|float
-add_column|Unk8|int
-add_column|Unk9|byte
-add_column|Unk10|byte
-add_column|Unk11|byte
-add_column|Unk12|byte
+
+add_column|SeadEventId|int
+add_column|Bool9|byte
+add_column|Bool10|byte
+// <implicit 2 byte padding>

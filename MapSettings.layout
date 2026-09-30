@@ -7,5 +7,5 @@ add_column|DLCFlags|int
 add_column|UnkGridSectorRelated|int
 add_column|Unk3|int
 add_column|Unk4|int
-add_column|Unk5|float
+add_column|CorpseUnk|float                 // ref: 0F B6 40 ? C5 F8 57 C0 C5 FA 2A C0 48 8B 05
 add_column|Unk6|int

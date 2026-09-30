@@ -3,13 +3,16 @@ set_table_type|DoubleKeyed
 set_table_category|DoubleKeyed
 use_base_row_id|true
 
+// Table fetcher: 48 89 5C 24 ? 48 89 74 24 ? 48 89 7C 24 ? 55 41 56 41 57 48 8B EC 48 83 EC ? 4C 8B 41
+// Type is 0-8, each with its own class handler (vtable)
+
 add_column|DLCFlags|int
-add_column|Unk2|int
-add_column|Unk3|int
-add_column|Unk4|int
-add_column|Unk5|int
-add_column|Unk6|int
-add_column|Unk7|int
-add_column|Unk8|int
-add_column|Unk9|int
-add_column|Unk10|int
+add_column|Type1|int
+add_column|Value1|int
+add_column|Unused1|int
+add_column|Type2|int
+add_column|Value2|int
+add_column|Unused2|int
+add_column|Type3|int
+add_column|Value3|int
+add_column|Unused3|int

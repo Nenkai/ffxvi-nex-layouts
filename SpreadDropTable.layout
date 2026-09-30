@@ -5,22 +5,32 @@ use_base_row_id|false
 
 // Key2 is difficulty. Refer to difficultylevel for ids.
 
+// This is a table defining item drops with weighted chances.
+
+// Essentially:
+// var numRolls = RandomRange(MinRollCount, MaxRollCount + 1);
+// for (int i = 0; i < numRolls; i++)
+// {
+//     pick random index based on Item1/2/3DropPercentChance
+//     index is item, Item1/2/3Union & count
+//     variance is how many extra items to randomly remove OR add on top of count
+// }
+
 add_column|DLCFlags|int
-add_column|UnkUnion2|union
-add_column|Unk4|int
-add_column|UnkUnion5|union
-add_column|Unk7|int
-add_column|UnkUnion8|union
-add_column|Unk10|int
-add_column|Unk11|int
-add_column|Unk12|int
-add_column|Unk13|int
-add_column|Unk14|int
-add_column|Unk15|byte
-add_column|Unk16|byte
-add_column|Unk17|byte
-add_column|Unk18|byte
-add_column|Unk19|byte
-add_column|Unk20|byte
-add_column|Unk21|byte
-add_column|Unk22|byte
+add_column|Item1Union|union
+add_column|Item1BaseCount|int
+add_column|Item2Union|union
+add_column|Item2BaseCount|int
+add_column|Item3Union|union
+add_column|Item3BaseCount|int
+add_column|UnkItemId|int
+add_column|Item1CountVariance|int
+add_column|Item2CountVariance|int
+add_column|Item3CountVariance|int
+add_column|UnkCount|ushort
+add_column|MinRollCount|byte
+add_column|MaxRollCount|byte
+add_column|Item1DropPercentChance|byte
+add_column|Item2DropPercentChance|byte
+add_column|Item3DropPercentChance|byte
+// <implicit 1 byte padding>

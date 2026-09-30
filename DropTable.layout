@@ -4,9 +4,14 @@ set_table_category|DoubleKeyed
 use_base_row_id|false
 
 add_column|DLCFlags|int
-add_column|Unk2|int
+add_column|Gil|int
 add_column|Exp|int
-add_column|Unk4|int
+
+// 0 = None
+// 1 = Individual Roll, each item is picked if an individual roll for each chance passes
+// 2 = Weighted Roll, one item is picked based on the sum of all chances and then RNG
+add_column|DropType|int          // ref: 41 8B 48 ? 83 E9 ? 0F 84 ? ? ? ? 83 F9 ? 0F 85 ? ? ? ? 45 8B F3
+
 add_column|ItemCount1|int
 add_column|ItemCount2|int
 add_column|ItemCount3|int

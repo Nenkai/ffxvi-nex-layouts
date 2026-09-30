@@ -99,8 +99,8 @@ add_column|Task7Type|int
 add_column|TaskUnions7|union[]
 add_column|Task8Type|int
 add_column|TaskUnions8|union[]
-add_column|Unk30|int
-add_column|Unk31|int
+add_column|CheckpointQuestSequenceIdKey2|int       // ref: 45 8B 41 ? 48 8D 4D ? 8B 50 ? E8 ? ? ? ? 4C 8B 55
+add_column|CheckpointQuestSequenceIdKey1|int       // ref: 8B 50 ? E8 ? ? ? ? 4C 8B 55
 add_column|UnkLayoutNamedInstanceId|int
 add_column|Unk33|int
 add_column|Unk34|int
@@ -108,7 +108,7 @@ add_column|Comment2|string
 add_column|Unk36|int
 add_column|Unk37|int
 add_column|Unk38|int
-add_column|Unk39|int
+add_column|QuestReportJumpId|int
 add_column|Unk40|byte
 add_column|Unk41|byte
 add_column|Unk42|byte

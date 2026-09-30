@@ -3,7 +3,10 @@ set_table_type|DoubleKeyed
 set_table_category|DoubleKeyed
 use_base_row_id|false
 
+// Addressed from BNpcReactionType
+// ref: 48 8B C4 48 89 58 ? 4C 89 48 ? 4C 89 40 ? 48 89 48 ? 55 56 57 41 54 41 55 41 56 41 57 48 8B EC
+
 add_column|DLCFlags|int
-add_column|Unk2|int
-add_column|Unk3|int
-add_column|Unk4|int
+add_column|OnHitStandingDamageReactionId|int
+add_column|OnHitAirborneDamageReactionId|int
+add_column|OnHitDownedDamageReactionId|int

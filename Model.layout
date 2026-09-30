@@ -24,7 +24,7 @@ add_column|Unk18|float
 add_column|MagicFilePath|string                 // Note: This path also determines the .dep file that gets loaded under system/game/magic/depend_resource_info.pac
 add_column|HitSeIdMaybe|int
 add_column|Unk21|int
-add_column|Unk21_1|int
+add_column|DeadEffectId|int                     // ref: 8B 78 ? 85 FF 74 ? 48 8B 05 ? ? ? ? 48 85 C0 75 ? 48 8B 0D ? ? ? ? 48 85 C9 74 ? BA ? ? ? ? E8 ? ? ? ? 48 89 05 ? ? ? ? 48 85 C0
 add_column|RandomVoiceLines|string[]            // No more than 20, chosen at random - ffxvi.exe steam 1.0.1 - 140060211
 add_column|BehaviorIdleBreakParamId|int
 add_column|Unk24|string
@@ -42,7 +42,7 @@ add_column|Unk35|int
 add_column|UnkType36|int                        // ref: 41 8B 88 ? ? ? ? 83 E9 ? 74 ? 83 F9 ? 75 ? 0F BA 6D
 add_column|Unk37|int
 add_column|Unk38|byte
-add_column|Unk39|byte
+add_column|Unk39|byte                           // ref: 8A 98 ? ? ? ? 88 9E
 add_column|Unk40|byte
 add_column|Unk41|byte
 add_column|FootWetnessId|byte
